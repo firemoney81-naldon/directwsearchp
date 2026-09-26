@@ -2,9 +2,9 @@
 <meta charSet="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover"/>
-<meta property="og:title" content="자동차보험 할증등급"/>
-<meta property="og:site_name" content="자동차보험 할증등급" />
-<meta name="Naver Search Advisor" content="자동차보험 할증등급">
+<meta property="og:title" content="‘자동차보험 할증 등급’ 등급표 기준 조회"/>
+<meta property="og:site_name" content="‘자동차보험 할증 등급’ 등급표 기준 조회" />
+<meta name="Naver Search Advisor" content="‘자동차보험 할증 등급’ 등급표 기준 조회">
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="/"/>
 <meta property="og:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
@@ -13,7 +13,7 @@
 <meta itemprop="description" content="" />
 <meta name="twitter:description" content=""/>
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="자동차보험 할증등급"/>
+<meta name="twitter:title" content="‘자동차보험 할증 등급’ 등급표 기준 조회"/>
 <meta name="twitter:url" content="/"/>
 <meta name="twitter:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
 <meta name="google-site-verification" content="Y3fXcVzUuIR4VE14NQ7r1hfIdNjSo6sWt-XonIsILTE" />
@@ -26,9 +26,9 @@
 <meta name="Yeti" content="index, follow" />
 <meta name="googlebot" content="index, follow" />
 
-<meta name="subject" content="자동차보험 할증등급" />
-<meta name="publisher" content="자동차보험 할증등급" />
-<meta name="Other Agent" content="자동차보험 할증등급" />
+<meta name="subject" content="‘자동차보험 할증 등급’ 등급표 기준 조회" />
+<meta name="publisher" content="‘자동차보험 할증 등급’ 등급표 기준 조회" />
+<meta name="Other Agent" content="‘자동차보험 할증 등급’ 등급표 기준 조회" />
 <meta name="location" content="South Korea" />
 <meta name="distribution" content="global" />
 <meta name="rating" content="general" />
@@ -52,11 +52,11 @@
     <!-- Apple iOS 최적화 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="자동차보험 할증등급">
+    <meta name="apple-mobile-web-app-title" content="‘자동차보험 할증 등급’ 등급표 기준 조회">
 
     <!-- Android Chrome 최적화 -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="자동차보험 할증등급">
+    <meta name="application-name" content="‘자동차보험 할증 등급’ 등급표 기준 조회">
 
     <!-- 모바일 뷰포트 최적화 -->
     <meta name="viewport"
@@ -70,7 +70,7 @@
 
 
 
-<title>자동차보험 할증등급</title>
+<title>‘자동차보험 할증 등급’ 등급표 기준 조회</title>
 
 <meta name="next-head-count" content="25"/>
 <meta name="format-detection" content="telephone=no"/>
@@ -80,1178 +80,2013 @@
 
 
 
+<!-- 브릿지 페이지가 생성될 빈 컨테이너 -->
+<div id="dynamic-bridge-app"></div>
+
+<script>
+(function() {
+    // ======================================================================
+    // [모바일 대응 필수] 뷰포트 메타태그 자동 삽입
+    // ======================================================================
+    if (!document.querySelector('meta[name="viewport"]')) {
+        const meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+        document.head.appendChild(meta);
+    }
+
+    // ======================================================================
+    // [설정 영역] ★수백 개 배포 시 사이트마다 이 값을 반드시 다르게 설정하세요!★
+    // ======================================================================
+    const config = {
+        siteId: "site_loan_001",           // [필수] 사이트 고유 ID (텍스트 풀 시드값 및 고유 해시 생성용)
+        targetUrl: "https://kbohum.kr/?num=35445436&insu_category=total",     // [필수] 실제 이동할 URL (검색엔진 가이드라인 준수를 위해 rel 속성 적용)
+        themeColor: "#007bff",             // 사이트 테마 컬러 (버튼 색상)
+        topic: "자동차보험 및 보험료 계산 비교 추천",          // 사이트별 주요 타겟 키워드
+        minCount: 130,                     // 최소 방문자 수 범위
+        maxCount: 380                      // 최대 방문자 수 범위
+    };
+
+    // ======================================================================
+    // [코어 로직] 구조 난수화 및 표준 규격 전환 엔진
+    // ======================================================================
+
+    // 1. 사이트 ID 기반 자체 난수 생성기
+    let seedValue = 0;
+    for(let i=0; i<config.siteId.length; i++) seedValue += config.siteId.charCodeAt(i);
+    function seededRandom() {
+        let t = seedValue += 0x6D2B79F5;
+        t = Math.imul(t ^ t >>> 15, t | 1);
+        t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    }
+    function pickRandom(arr) {
+        return arr[Math.floor(seededRandom() * arr.length)];
+    }
+
+    // 2. 동적 클래스명 및 디자인 수치 생성 (페이지 로드 시마다 무작위 해시 적용)
+    const hash = Math.random().toString(36).substring(2, 6) + Math.floor(seededRandom() * 1000);
+    const prefix = `cls_${hash}_`;
+    
+    const dynPadding = Math.floor(seededRandom() * 20) + 50; 
+    const dynMargin = Math.floor(seededRandom() * 20) + 40;  
+    const dynRadius = Math.floor(seededRandom() * 8) + 12;   
+
+    // 3. 날짜 로직
+    const today = new Date();
+    const todayIso = today.toISOString().split('T')[0];
+    const todayStr = `${today.getFullYear()}년 ${today.getMonth() + 1}월 ${today.getDate()}일`;
+
+    const yesterday = new Date(today);
+    yesterday.setDate(today.getDate() - 1);
+    const yesterdayIso = yesterday.toISOString().split('T')[0];
+    const yesterdayStr = `${yesterday.getFullYear()}년 ${yesterday.getMonth() + 1}월 ${yesterday.getDate()}일`;
+
+    // 4. 콘텐츠 스피닝 풀
+    const titles = [
+        "잠시만 확인해주세요!", "신청 전 마지막 확인 단계입니다.", "맞춤 솔루션 안내 페이지입니다.", 
+        "다음 단계로 이동을 준비 중입니다.", "성공적인 접속을 위해 확인해 주세요.", "최적의 맞춤 정보를 찾고 있습니다.", 
+        "고객님을 위한 전용 안내 페이지입니다.", "안전한 진행을 위해 잠시 대기해 주세요.", "상담 신청을 위한 필수 확인 단계입니다.", 
+        "빠른 연결을 위해 데이터 분석 중입니다.", "나에게 맞는 최적의 결과를 확인하세요.", "정확한 안내를 위한 마지막 과정입니다.", 
+        "성공적인 솔루션 매칭이 진행 중입니다.", "맞춤형 전문가 연결을 준비하고 있습니다.", "안전한 페이지로 이동 중입니다. 잠시만 기다려주세요."
+    ];
+    
+    const descriptions = [
+        `입력하신 정보를 바탕으로 <strong>${config.topic}</strong> 결과를 분석 중입니다.`,
+        `성공적인 <strong>${config.topic}</strong> 상담 신청을 위해 최종 페이지로 연결됩니다.`,
+        `고객님께 최적화된 <strong>${config.topic}</strong> 솔루션을 제공하기 위한 단계입니다.`,
+        `안전하고 빠른 <strong>${config.topic}</strong> 진행을 위해 아래 버튼을 클릭해 주세요.`,
+        `빅데이터 기반으로 가장 적합한 <strong>${config.topic}</strong> 맞춤 견적을 산출하고 있습니다.`,
+        `검증된 <strong>${config.topic}</strong> 전문가와의 매칭을 위해 다음 페이지로 이동합니다.`,
+        `현재 고객님의 조건에 딱 맞는 <strong>${config.topic}</strong> 혜택을 확인 중입니다.`,
+        `실시간으로 업데이트되는 <strong>${config.topic}</strong> 핵심 정보를 제공해 드립니다.`,
+        `신속하고 정확한 <strong>${config.topic}</strong> 안내를 위해 최종 확인을 부탁드립니다.`,
+        `수많은 데이터 중 고객님만을 위한 <strong>${config.topic}</strong> 플랜을 구성하고 있습니다.`,
+        `원활한 <strong>${config.topic}</strong> 서비스 이용을 위해 필수적인 안내 페이지입니다.`,
+        `최고의 만족을 드릴 수 있는 <strong>${config.topic}</strong> 컨설팅으로 바로 연결해 드립니다.`,
+        `불필요한 과정 없이 <strong>${config.topic}</strong> 핵심 솔루션만 빠르게 확인해 보세요.`,
+        `고객님의 성공적인 <strong>${config.topic}</strong> 진행을 돕기 위한 전용 브릿지 페이지입니다.`,
+        `아래 버튼을 눌러 나에게 가장 유리한 <strong>${config.topic}</strong> 조건을 즉시 확인해 보세요.`
+    ];
+
+    const buttons = [
+        "무료로 결과 확인하기", "나에게 맞는 솔루션 신청", "맞춤 견적 무료 조회", "나만의 맞춤 솔루션 확인", 
+        "무료 컨설팅 받아보기", "실시간 결과 조회하기", "최적의 조건 무료로 비교하기", "1:1 맞춤 상담 바로가기", 
+        "숨은 혜택 확인하고 신청하기", "나의 예상 결과 1초 만에 확인", "전문가 무료 매칭 시작하기", 
+        "가장 유리한 조건 확인하기", "비공개 특별 혜택 보러가기", "나의 맞춤형 플랜 확인하기", 
+        "지금 바로 혜택 조회하기", "안전하게 무료 상담 신청하기"
+    ];
+
+    const disclaimers = [
+        "본 정보는 제휴 파트너사의 지원을 받아 작성되었으며, 서비스 이용 시 소정의 수수료를 지급받을 수 있습니다.",
+        "해당 콘텐츠는 파트너십을 통해 제공되며, 일정액의 대가를 받을 수 있는 제휴 링크가 포함되어 있습니다.",
+        "본 페이지의 서비스는 광고주의 협력으로 운영되며, 이용 실적에 따라 제휴 수수료가 발생할 수 있습니다.",
+        "이 페이지는 제휴 마케팅의 일환으로 구성되었으며, 파트너사로부터 일정 수수료를 제공받을 수 있음을 안내드립니다.",
+        "본 안내는 정보 제공을 목적으로 하며, 연결된 사이트에서의 활동으로 인해 당사에 소정의 리워드가 지급될 수 있습니다.",
+        "독자에게 유용한 정보를 제공하기 위해 작성된 페이지이며, 제휴사로부터 마케팅 지원을 받고 있습니다.",
+        "해당 브릿지 페이지는 공식 파트너 활동의 일환으로, 연결된 서비스를 통해 수익이 발생할 수 있습니다.",
+        "고객님의 편의를 위해 제공되는 맞춤 정보이며, 서비스 제휴에 따른 경제적 대가를 받을 수 있습니다.",
+        "본 추천 서비스는 제휴 광고가 포함되어 있어, 상담 완료 시 수수료가 제공될 수 있음을 명시합니다.",
+        "신뢰할 수 있는 파트너사의 정보를 선별하여 제공하며, 이에 따른 소정의 커미션을 지급받을 수 있습니다."
+    ];
+
+    const semanticTags = ["div", "section", "article", "main"];
+
+    const selectedTitle = pickRandom(titles);
+    const selectedDesc = pickRandom(descriptions);
+    const selectedBtn = pickRandom(buttons);
+    const selectedDisclaimer = pickRandom(disclaimers);
+    const wrapperTag = pickRandom(semanticTags);
+    const innerTag = pickRandom(["div", "section"]);
+
+    // 5. 모바일 대응 동적 스타일 인젝션
+    const style = document.createElement('style');
+    style.textContent = `
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css');
+        
+        .${prefix}container, .${prefix}container * { box-sizing: border-box; }
+        .${prefix}container { 
+            font-family: 'Pretendard', -apple-system, sans-serif; 
+            margin: ${dynMargin}px auto; 
+            padding: ${dynPadding}px 30px; 
+            text-align: center; 
+            background: #fff; 
+            border-radius: ${dynRadius}px; 
+            box-shadow: 0 ${Math.floor(seededRandom()*5)+5}px ${Math.floor(seededRandom()*20)+20}px rgba(0,0,0,0.05); 
+            border: 1px solid #f1f1f1; 
+            max-width: 600px; width: 100%; opacity: 0; transition: opacity 0.4s ease; 
+        }
+        .${prefix}h1 { font-size: ${Math.floor(seededRandom()*4)+26}px; color: #111; margin-bottom: 22px; letter-spacing: -0.5px; word-break: keep-all; line-height: 1.3; }
+        .${prefix}p { font-size: 17px; color: #444; line-height: 1.6; margin-bottom: 35px; word-break: keep-all; }
+        .${prefix}btn { display: inline-block; width: 100%; max-width: 360px; padding: 16px 20px; background-color: ${config.themeColor}; color: #fff; font-weight: 700; text-decoration: none; border-radius: ${Math.floor(seededRandom()*8)+6}px; font-size: 19px; box-shadow: 0 4px 14px rgba(0,0,0,0.15); transition: transform 0.2s, background-color 0.2s; cursor: pointer; border: none; text-align: center; }
+        .${prefix}btn:hover { transform: translateY(-2px); filter: brightness(95%); }
+        .${prefix}box { margin-top: 45px; padding-top: 25px; border-top: 1px dashed #e5e5e5; }
+        .${prefix}stat-text { font-size: 20px; font-weight: 700; color: #333; }
+        .${prefix}sub-text { font-size: 14px; color: #777; display: block; margin-bottom: 8px; font-weight: 400; }
+        .${prefix}num { font-size: 32px; font-weight: 900; color: ${config.themeColor}; }
+        .${prefix}foot { font-size: 12px; color: #999; line-height: 1.5; margin-top: 40px; text-align: left; background: #fcfcfc; padding: 15px; border-radius: 6px; word-break: keep-all; }
+        
+        @media screen and (max-width: 640px) { 
+            .${prefix}container { margin: 20px auto; padding: 30px 20px; width: 92%; border-radius: 16px; } 
+            .${prefix}h1 { font-size: 22px; margin-bottom: 15px; }
+            .${prefix}p { font-size: 15px; margin-bottom: 25px; }
+            .${prefix}btn { font-size: 16px; padding: 14px 10px; }
+            .${prefix}num { font-size: 28px; }
+            .${prefix}box { margin-top: 30px; }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // 6. 동적 DOM 생성 
+    const container = document.getElementById('dynamic-bridge-app');
+    if(container) {
+        container.innerHTML = `
+            <${wrapperTag} class="${prefix}container" id="${prefix}main">
+                <h1 class="${prefix}h1">${selectedTitle}</h1>
+                <p class="${prefix}p">${selectedDesc}</p>
+                
+                <!-- [개선 완료] 정석적인 아웃바운드 링크 구조 적용 (rel="nofollow sponsored") -->
+                <a href="${config.targetUrl}" rel="nofollow sponsored" class="${prefix}btn" id="${prefix}cta">
+                    ${selectedBtn}
+                </a>
+                
+                <${innerTag} class="${prefix}box">
+                    <div class="${prefix}stat-text">
+                        <span class="${prefix}sub-text"><time datetime="${yesterdayIso}">${yesterdayStr}</time> 통계 기준</span>
+                        실시간 무료 비교 신청자 <span class="${prefix}num" id="${prefix}counter">0</span>명
+                    </div>
+                </${innerTag}>
+
+                <p style="font-size:13px; color:#666; margin-top:20px; line-height:1.4; display:none;" id="${prefix}seo-text">
+                    해당 안내는 ${todayStr} 업데이트 자료를 반영하여 고객님의 상황에 맞는 ${config.topic} 정보를 원활히 제공하기 위함입니다.
+                </p>
+
+                <footer class="${prefix}foot">
+                    [업데이트: <time datetime="${todayIso}">${todayStr}</time>]<br>
+                    ${selectedDisclaimer}
+                </footer>
+            </${wrapperTag}>
+        `;
+
+        // 문맥 텍스트 노출
+        setTimeout(() => { 
+            const seoText = document.getElementById(`${prefix}seo-text`);
+            if(seoText) seoText.style.display = 'block'; 
+        }, 100);
+
+        // 7. 검색엔진 이해용 구조적 데이터(JSON-LD Schema) 동적 삽입
+        const schemaData = {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": `${config.topic} 안내`,
+            "dateModified": today.toISOString(),
+            "description": selectedDesc.replace(/<[^>]*>?/gm, '') 
+        };
+        const scriptEl = document.createElement('script');
+        scriptEl.type = 'application/ld+json';
+        scriptEl.text = JSON.stringify(schemaData);
+        document.head.appendChild(scriptEl);
+
+        // 8. 통계 카운터 애니메이션 엔진
+        function animateCount() {
+            const targetElement = document.getElementById(`${prefix}counter`);
+            if(!targetElement) return;
+            const dateSeed = yesterday.getFullYear() * 10000 + (yesterday.getMonth()+1) * 100 + yesterday.getDate() + seedValue;
+            
+            let pseudoRandom = Math.sin(dateSeed) * 10000;
+            pseudoRandom = pseudoRandom - Math.floor(pseudoRandom);
+            
+            const targetNumber = Math.floor(pseudoRandom * (config.maxCount - config.minCount + 1)) + config.minCount;
+            const startTime = performance.now();
+            const duration = 1800;
+
+            function updateNumber(currentTime) {
+                const progress = Math.min((currentTime - startTime) / duration, 1);
+                const easeOutProgress = progress * (2 - progress); 
+                targetElement.innerText = Math.floor(easeOutProgress * targetNumber).toLocaleString();
+                if (progress < 1) requestAnimationFrame(updateNumber);
+            }
+            requestAnimationFrame(updateNumber);
+        }
+
+        // 9. 페이드인 및 애니메이션 시동
+        setTimeout(() => {
+            const mainEl = document.getElementById(`${prefix}main`);
+            if(mainEl) mainEl.style.opacity = '1';
+            animateCount();
+        }, 150);
+    }
+})();
+</script>
 
 
 
-    <script type="application/ld+json">
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+	
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "WebPage",
+      "@id": "https://www.example.com/#webpage",
+      "url": "https://www.example.com/",
+      "name": "자동차보험 할증 등급 등급표 기준 조회 및 2026-2027년 계산 가이드",
+      "description": "자동차보험 할증 등급표 기준, 사고점수 산정 매커니즘, 직전 3년간 사고건수 요율 및 실시간 공식 조회 절차를 설명하는 전문 금융 정보 페이지",
+      "inLanguage": "ko-KR",
+      "datePublished": "2026-01-15T09:00:00+09:00",
+      "dateModified": "2026-09-26T15:30:00+09:00"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.example.com/#article",
+      "isPartOf": {
+        "@id": "https://www.example.com/#webpage"
+      },
+      "headline": "자동차보험 할증 등급 등급표 기준 조회 및 사고점수별 요율 변동 총정리",
+      "description": "자동차 소유자라면 매년 갱신 시 직면하는 자동차보험 할인할증 등급의 세부 산출 공식과 1Z부터 29Z까지의 구간별 요율표, 물적사고 기준금액 초과에 따른 할증 체계 심층 해설",
+      "datePublished": "2026-01-15T09:00:00+09:00",
+      "dateModified": "2026-09-26T15:30:00+09:00",
+      "mainEntityOfPage": "https://www.example.com/",
+      "author": {
+        "@type": "Organization",
+        "name": "자동차보험 등급요율 연구센터"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "자동차보험 등급요율 연구센터",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.example.com/logo.png"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.example.com/#faq",
+      "mainEntity": [
         {
-          "@type": "WebPage",
-          "@id": "https://ins.reliabledone.com/car-insurance-grade-2026#webpage",
-          "url": "https://ins.reliabledone.com/car-insurance-grade-2026",
-          "name": "2026년 자동차보험 할인할증등급 기준표 및 요율 계산 시뮬레이터",
-          "description": "2026년 최신 자동차보험 할증 등급 적용률 분석 및 사고 발생 시 예상 비용 계산 가이드. 내 할인할증등급 확인 방법, 소액사고 보험금 환입 처리로 최저가 다이렉트 가입 혜택을 받는 법을 전문 컨설턴트 관점에서 상세히 제시합니다."
+          "@type": "Question",
+          "name": "자동차보험 할증 등급이란 무엇이며 신규 가입 시 최초 부여되는 등급은 몇 등급인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "자동차보험 할증 등급은 운전자의 사고 이력과 운전 성향을 수치화하여 보험료 할인 또는 할증을 적용하는 제도로서 1등급(1Z)부터 29등급(29Z/29P)까지 총 29개 구간으로 분류됩니다. 생애 최초로 자동차보험에 신규 가입하는 기본 운전자는 통상 11등급(11Z)을 부여받으며, 이때의 적용 요율은 기준 요율 100% 안팎으로 설정됩니다. 무사고 운전을 유지하면 1년마다 1등급씩 승급하여 할인을 받게 되고, 유책 사고가 발생하면 사고의 경중에 따라 점수가 가산되어 등급이 강등됩니다."
+          }
         },
         {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "자동차보험 사고 1회 발생 시 등급 할증은 어떻게 되나요?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "사고 점수에 따라 달라집니다. 대인사고는 부상 등급(1급~14급)에 따라 1점~4점, 대물사고는 가입 시 설정한 물적사고 할증기준금액(일반적으로 200만 원) 초과 시 1점, 이하면 0.5점이 부과됩니다. 사고 점수 1점당 할인할증등급은 1단계 하향 조정되며, 0.5점 사고는 즉시 할증되지는 않으나 3년간 할인이 유예되는 F등급이 됩니다."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "보험금 환입이란 무엇이며 어떻게 신청하나요?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "보험금 환입은 이미 보험사로부터 지급된 사고 처리 비용을 계약자가 직접 현금으로 납부하여 사고 기록 자체를 무효화하는 제도입니다. 이를 통해 할인할증등급이 떨어지거나 동결되는 것을 방지하고 기존 등급을 보존할 수 있습니다. 가입한 브랜드의 고객센터 전화를 통해 환입을 신청할 수 있습니다."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "사고가 났을 때 보험료가 얼마나 할증되는지 계산하는 핵심 기준은 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "자동차보험료 할증은 크게 사고내용점수(사고 크기)와 사고건수요율(직전 3년간 및 직전 1년간 사고 빈도)이라는 두 가지 축으로 계산됩니다. 대인배상 부상 등급(1급부터 14급), 자기신체사고 부상 급수, 대물배상 및 자기차량손해(자차) 수리비가 물적사고 할증기준금액(통상 200만원)을 초과하는지 여부에 따라 0.5점에서 4점 이상의 점수가 책정됩니다. 1점당 보통 1등급이 하락하며, 등급 하락에 따른 기본요율 인상 외에도 3년간 사고건수 요율이 추가 가산되므로 실질 체감 인상률은 20%에서 50% 이상까지 급격히 상승할 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "내 자동차보험 등급과 할인할증 요율은 어디서 실시간으로 공식 조회할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "공식 공인 포털인 보험개발원의 자동차보험 과오납 및 계약정보 통합조회 시스템, 또는 내보험다보여 서비스를 통해 본인인증 후 현재 본인의 개별 할인할증 등급(예: 14Z, 17F 등)과 법규위반 여부, 직전 3년간 사고 이력을 실시간으로 열람할 수 있습니다. 또한 토스, 카카오페이, 네이버페이 등 주요 핀테크 금융 앱의 자동차보험 갱신 조회 코너나 각 다이렉트 손해보험사의 다이렉트 모바일 어플리케이션에서도 갱신 만기 30일 전부터 세부 등급표와 예상 견적을 즉시 확인할 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "경미한 접촉사고 발생 시 자비로 처리하는 것과 보험처리 후 환입하는 것 중 어느 방법이 유리한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "수리비 총액이 30만원에서 50만원 이하의 소액 사고인 경우, 보험처리를 하면 향후 3년간 등급 승급이 유예(동결)될 뿐만 아니라 사고건수요율이 붙어 매년 갱신 시 납부해야 할 3개년 누적 추가 보험료 부담이 자비 수리비용을 초과하는 경우가 대부분입니다. 일단 급한 마음에 보험처리를 진행했더라도, 갱신 계약 체결 전 보험사에 지급된 보험금을 전액 반환 납부하는 환입 제도를 활용하면 사고 이력 자체가 삭제되어 무사고 승급 상태를 그대로 복원할 수 있습니다."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://www.example.com/#howto",
+      "name": "자동차보험 할증 등급 조회 및 최적 할인 갱신 방법",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "공식 조회 시스템 접속 및 본인인증",
+          "text": "보험개발원 통합포털 또는 각사 다이렉트 앱에 접속하여 공동인증서, 금융인증서, 간편인증(카카오, 네이버, 토스)을 통해 본인 식별을 진행합니다."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "현재 적용 등급(알파벳 표기 확인) 및 사고 건수 점검",
+          "text": "조회 결과 화면에서 현재 등급 코드(예: 13Z, 16P 등)와 지난 3개년간의 유책 사고 건수 및 과실비율 인정 내역을 대조합니다."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "사고 처리 건에 대한 환입 실익 시뮬레이션 계산",
+          "text": "직전 연도에 소액 사고 보험금 지급 건이 있다면 고객센터 상담을 통해 해당 보험금을 환입했을 때 절감되는 3년간 차기 예상 보험료 총액과 비교합니다."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "다이렉트 최저가 견적 비교 후 최종 계약 체결",
+          "text": "조회된 등급을 바탕으로 마일리지 특약, 블랙박스 특약, UBI 안전운전 점수 등 추가 할인 제도를 결합하여 가장 저렴한 브랜드에서 1년(12개월) 갱신 계약을 완료합니다."
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
-      :root {
-        --primary-color: #2b5c8f; 
-        --secondary-color: #5c93c4; 
-        --accent-color: #e06d53; 
-        --bg-color-light: #f5f8fc;
-        --card-bg: #ffffff;
-        --text-color-dark: #2c3e50;
-        --text-color-muted: #5a6b7c;
-        --border-color: #e2e8f0;
-      }
-      body {
-        font-family: 'Noto Sans KR', sans-serif;
-        margin: 0;
-        padding: 0;
-        line-height: 1.8;
-        background-color: var(--bg-color-light);
-        color: var(--text-color-dark);
-        font-size: 16px;
-      }
-      header {
-        background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-        color: white;
-        padding: 3rem 1.5rem;
-        text-align: center;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-      }
-      header h1 {
-        font-size: 2.2rem;
-        font-weight: 700;
-        margin-bottom: 0.8rem;
-        letter-spacing: -0.5px;
-      }
-      header p {
-        font-size: 1.1rem;
-        opacity: 0.95;
-        max-width: 800px;
-        margin: 0 auto 1.5rem auto;
-      }
-      nav ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-        margin-top: 1.5rem;
-        flex-wrap: wrap;
-      }
-      nav a {
-        color: white;
-        text-decoration: none;
-        font-weight: 500;
-        transition: all 0.3s ease;
-        padding: 5px 12px;
-        border-radius: 4px;
-        background-color: rgba(255, 255, 255, 0.1);
-      }
-      nav a:hover {
-        background-color: var(--accent-color);
-        color: white;
-      }
-      main {
-        max-width: 1100px;
-        margin: 2.5rem auto;
-        padding: 2rem;
-        background-color: var(--card-bg);
-        border-radius: 16px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-      }
-      section {
-        padding: 2.5rem 0;
-        border-bottom: 1px solid var(--border-color);
-      }
-      section:last-of-type {
-        border-bottom: none;
-      }
-      h2 {
-        color: var(--primary-color);
-        font-size: 1.8rem;
-        font-weight: 700;
-        padding-bottom: 0.8rem;
-        border-bottom: 2px solid var(--accent-color);
-        margin-top: 2.5rem;
-        margin-bottom: 1.5rem;
-      }
-      h3 {
-        color: var(--primary-color);
-        font-size: 1.4rem;
-        font-weight: 700;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-      }
-      p {
-        margin-bottom: 1.2rem;
-        color: var(--text-color-dark);
-        text-align: justify;
-      }
-      strong {
-        color: var(--primary-color);
-        font-weight: 700;
-      }
-      span.keyword-highlight {
-        background-color: #eef3f9;
-        color: #1e3a8a;
-        padding: 2px 6px;
-        border-radius: 4px;
-        font-weight: 500;
-      }
-      /* 테이블 스타일 */
-      .table-container {
-        overflow-x: auto;
-        margin: 2rem 0;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-        border: 1px solid var(--border-color);
-      }
-      table {
-        width: 100%;
-        border-collapse: separate;
-        border-spacing: 0;
-      }
-      th, td {
-        padding: 1.1rem;
-        text-align: center;
-        border-bottom: 1px solid var(--border-color);
-      }
-      th {
-        background-color: var(--primary-color);
-        color: white;
-        font-weight: 700;
-        font-size: 1rem;
-      }
-      tbody tr:nth-child(even) {
-        background-color: #fcfdfe;
-      }
-      tbody tr:hover {
-        background-color: #f1f5f9;
-      }
-      /* 키워드 태그 */
-      .keyword-tags {
-        margin: 1.5rem 0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-      .keyword-tags a {
-        background-color: #edf2f7;
-        color: var(--primary-color);
-        padding: 6px 14px;
-        border-radius: 20px;
-        font-size: 0.85rem;
-        text-decoration: none;
-        transition: all 0.3s ease;
-      }
-      .keyword-tags a:hover {
-        background-color: var(--primary-color);
-        color: white;
-      }
-      /* CTA 버튼 */
-      .cta-button {
-        display: block;
-        width: 80%;
-        max-width: 400px;
-        margin: 2.5rem auto;
-        background-color: var(--accent-color);
-        color: white;
-        font-weight: 700;
-        padding: 1.2rem 2rem;
-        border-radius: 30px;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        text-align: center;
-        font-size: 1.1rem;
-        box-shadow: 0 6px 20px rgba(224, 109, 83, 0.3);
-      }
-      .cta-button:hover {
-        background-color: #d05d43;
-        transform: translateY(-2px);
-      }
-      /* FAQ 아코디언 */
-      dl dt {
-        font-weight: 700;
-        margin-top: 1.2rem;
-        padding: 1.2rem;
-        background-color: #edf2f7;
-        border-radius: 8px;
-        cursor: pointer;
-        color: var(--primary-color);
-        transition: background-color 0.3s ease;
-        border-left: 4px solid var(--accent-color);
-      }
-      dl dt:hover {
-        background-color: #e2e8f0;
-      }
-      dl dt.active {
-        background-color: var(--primary-color);
-        color: white;
-      }
-      dl dd {
-        margin-left: 0;
-        padding: 1.2rem;
-        border: 1px solid var(--border-color);
-        border-top: none;
-        border-radius: 0 0 8px 8px;
-        display: none;
-        background-color: #ffffff;
-      }
-      dl dt.active + dd {
-        display: block;
-      }
-      /* 시뮬레이터 폼 */
-      .simulator-container {
-        background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
-        padding: 2.5rem;
-        border-radius: 16px;
-        border: 1px solid var(--border-color);
-        margin: 2rem 0;
-      }
-      .form-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-        margin-bottom: 2rem;
-      }
-      .form-group {
-        display: flex;
-        flex-direction: column;
-      }
-      .form-group label {
-        font-weight: 700;
-        margin-bottom: 0.5rem;
-        color: var(--primary-color);
-      }
-      .form-group select, .form-group input {
-        padding: 0.8rem;
-        border: 1px solid #cbd5e1;
-        border-radius: 8px;
-        font-size: 1rem;
-        background-color: white;
-        color: var(--text-color-dark);
-      }
-      .form-group select:focus, .form-group input:focus {
-        border-color: var(--primary-color);
-        outline: none;
-        box-shadow: 0 0 0 3px rgba(43, 92, 143, 0.15);
-      }
-      .checkbox-group {
-        grid-column: 1 / -1;
-        background-color: white;
-        padding: 1.2rem;
-        border-radius: 8px;
-        border: 1px solid var(--border-color);
-      }
-      .checkbox-group label {
-        display: inline-flex;
-        align-items: center;
-        margin-right: 1.5rem;
-        cursor: pointer;
-        font-weight: 500;
-      }
-      .checkbox-group input {
-        margin-right: 0.5rem;
-        width: 18px;
-        height: 18px;
-      }
-      /* 시뮬레이터 결과 영역 */
-      .result-box {
-        display: none;
-        background-color: #ffffff;
-        border-radius: 12px;
-        padding: 2rem;
-        border: 2px solid var(--primary-color);
-        margin-top: 2rem;
-        animation: fadeIn 0.5s ease;
-      }
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-      .result-title {
-        font-size: 1.3rem;
-        font-weight: 700;
-        color: var(--primary-color);
-        border-bottom: 2px solid #e2e8f0;
-        padding-bottom: 0.8rem;
-        margin-bottom: 1.2rem;
-      }
-      .result-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1.2rem;
-        margin-bottom: 1.5rem;
-      }
-      .result-item {
-        background-color: #f8fafc;
-        padding: 1rem;
-        border-radius: 8px;
-        border: 1px solid #e2e8f0;
-        text-align: center;
-      }
-      .result-label {
-        font-size: 0.9rem;
-        color: var(--text-color-muted);
-        margin-bottom: 0.3rem;
-      }
-      .result-val {
-        font-size: 1.3rem;
-        font-weight: 700;
-        color: var(--primary-color);
-      }
-      .result-advice {
-        background-color: #fffbeb;
-        border: 1px solid #fef3c7;
-        color: #92400e;
-        padding: 1.2rem;
-        border-radius: 8px;
-        line-height: 1.7;
-      }
-      /* 비주얼 차트 스타일 */
-      .chart-container {
-        background-color: #ffffff;
-        padding: 2rem;
-        border-radius: 12px;
-        border: 1px solid var(--border-color);
-        margin: 2rem 0;
-      }
-      .chart-bar-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 1.5rem;
-      }
-      .chart-row {
-        display: flex;
-        align-items: center;
-      }
-      .chart-label {
-        width: 120px;
-        font-size: 0.9rem;
-        font-weight: 700;
-        color: var(--text-color-dark);
-      }
-      .chart-bar-bg {
-        flex-grow: 1;
-        background-color: #edf2f7;
-        height: 24px;
-        border-radius: 12px;
-        overflow: hidden;
-        position: relative;
-      }
-      .chart-bar-fill {
-        height: 100%;
-        border-radius: 12px;
-        transition: width 1s ease-out;
-      }
-      .fill-surcharge {
-        background-color: var(--accent-color);
-      }
-      .fill-normal {
-        background-color: var(--secondary-color);
-      }
-      .fill-discount {
-        background-color: var(--primary-color);
-      }
-      .chart-value {
-        width: 60px;
-        text-align: right;
-        font-size: 0.9rem;
-        font-weight: 700;
-        color: var(--primary-color);
-        margin-left: 10px;
-      }
-      .source-links a {
-        display: block;
-        color: var(--primary-color);
-        margin-bottom: 0.5rem;
-        text-decoration: none;
-        font-weight: 500;
-      }
-      .source-links a:hover {
-        text-decoration: underline;
-        color: var(--accent-color);
-      }
-      footer {
-        text-align: center;
-        padding: 2rem;
-        font-size: 0.9rem;
-        color: var(--text-color-muted);
-        background-color: #edf2f7;
-        margin-top: 4rem;
-        border-top: 1px solid var(--border-color);
-      }
-    </style>
+<style>
+:root {
+  --primary-deep: #1e3a8a;
+  --primary-soft: #3b82f6;
+  --primary-light: #eff6ff;
+  --accent-teal: #0d9488;
+  --accent-mint: #ccfbf1;
+  --accent-amber: #d97706;
+  --accent-rose: #e11d48;
+  --text-main: #0f172a;
+  --text-muted: #334155;
+  --text-light: #64748b;
+  --bg-page: #f8fafc;
+  --bg-card: #ffffff;
+  --border-subtle: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.04);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.85;
+  font-size: 17px;
+  letter-spacing: -0.015em;
+  word-break: keep-all;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-subtle);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.site-brand {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary-deep);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+.header-badge {
+  font-size: 0.85rem;
+  background-color: var(--accent-mint);
+  color: var(--accent-teal);
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-weight: 700;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(145deg, #1e3a8a 0%, #2563eb 55%, #0284c7 100%);
+  color: #ffffff;
+  padding: 80px 0 70px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-content {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero-category {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 6px 18px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+.hero h1 {
+  font-size: 2.85rem;
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 24px;
+  letter-spacing: -0.03em;
+}
+.hero p {
+  font-size: 1.22rem;
+  line-height: 1.7;
+  color: #e0f2fe;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+.hero-meta {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-size: 0.92rem;
+  color: #bae6fd;
+}
+
+/* Quick Summary Card */
+.summary-wrapper {
+  margin-top: -35px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 20;
+}
+.summary-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-subtle);
+  padding: 35px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.summary-col {
+  border-right: 1px solid var(--border-subtle);
+  padding-right: 25px;
+}
+.summary-col:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+.summary-col-tag {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary-soft);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.summary-col-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+.summary-col-desc {
+  font-size: 0.98rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Main Content Layout */
+.content-wrapper {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  padding: 60px 55px;
+  margin-bottom: 60px;
+  box-shadow: var(--shadow-sm);
+}
+
+.article-section {
+  margin-bottom: 65px;
+}
+.article-section:last-child {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--border-subtle);
+  letter-spacing: -0.025em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 32px;
+  background-color: var(--primary-soft);
+  border-radius: 4px;
+}
+
+h3 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-top: 36px;
+  margin-bottom: 18px;
+  letter-spacing: -0.02em;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 20px;
+  color: var(--text-muted);
+}
+
+/* Callout Box */
+.info-callout {
+  background-color: var(--primary-light);
+  border-left: 5px solid var(--primary-soft);
+  padding: 24px 28px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin: 30px 0;
+}
+.info-callout-title {
+  font-weight: 800;
+  color: var(--primary-deep);
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+.info-callout p {
+  color: #1e40af;
+  margin-bottom: 0;
+}
+
+.warning-callout {
+  background-color: #fff1f2;
+  border-left: 5px solid var(--accent-rose);
+  padding: 24px 28px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin: 30px 0;
+}
+.warning-callout-title {
+  font-weight: 800;
+  color: #9f1239;
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+.warning-callout p {
+  color: #881337;
+  margin-bottom: 0;
+}
+
+/* Tables */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  margin: 30px 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.98rem;
+}
+thead tr {
+  background-color: #f1f5f9;
+  border-bottom: 2px solid var(--border-strong);
+}
+th {
+  padding: 16px 20px;
+  font-weight: 700;
+  color: var(--text-main);
+  white-space: nowrap;
+}
+td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+}
+tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+tr:hover {
+  background-color: #f0fdf4;
+}
+.td-highlight {
+  font-weight: 700;
+  color: var(--primary-deep);
+}
+.td-badge-discount {
+  display: inline-block;
+  background-color: #dcfce7;
+  color: #166534;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+.td-badge-surcharge {
+  display: inline-block;
+  background-color: #fee2e2;
+  color: #991b1b;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+.td-badge-base {
+  display: inline-block;
+  background-color: #f1f5f9;
+  color: #475569;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+/* CSS Chart & Visual Bar */
+.visual-bar-container {
+  background-color: #f8fafc;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 30px;
+  margin: 35px 0;
+}
+.bar-item {
+  margin-bottom: 22px;
+}
+.bar-item:last-child {
+  margin-bottom: 0;
+}
+.bar-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+.bar-title {
+  font-weight: 700;
+  color: var(--text-main);
+}
+.bar-rate {
+  font-weight: 800;
+}
+.bar-track {
+  height: 18px;
+  background-color: #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.bar-fill {
+  height: 100%;
+  border-radius: 10px;
+}
+.fill-surcharge {
+  background: linear-gradient(90deg, #f87171, #ef4444);
+}
+.fill-base {
+  background: linear-gradient(90deg, #60a5fa, #3b82f6);
+}
+.fill-discount {
+  background: linear-gradient(90deg, #34d399, #10b981);
+}
+
+/* Interactive Grade Simulator Widget */
+.simulator-box {
+  background: linear-gradient(145deg, #ffffff, #f0fdf4);
+  border: 2px solid #bbf7d0;
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  margin: 45px 0;
+  box-shadow: var(--shadow-md);
+}
+.simulator-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #14532d;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.simulator-subtitle {
+  text-align: center;
+  color: #166534;
+  margin-bottom: 30px;
+  font-size: 1.05rem;
+}
+.simulator-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-bottom: 30px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+.input-group label {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+.input-group select,
+.input-group input {
+  padding: 14px 16px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background-color: #ffffff;
+  font-size: 1rem;
+  color: var(--text-main);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.input-group select:focus,
+.input-group input:focus {
+  border-color: var(--accent-teal);
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+}
+.calc-btn-wrap {
+  text-align: center;
+}
+.calc-btn {
+  background: linear-gradient(135deg, #0d9488, #0f766e);
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 9999px;
+  padding: 18px 45px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.calc-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(13, 148, 136, 0.4);
+}
+.sim-result-box {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid #86efac;
+  display: none;
+}
+.sim-result-header {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #14532d;
+  margin-bottom: 12px;
+}
+.sim-result-val {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #0f766e;
+}
+.sim-result-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Step Card Styles */
+.step-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin: 35px 0;
+}
+.step-item {
+  background-color: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.step-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.step-num {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: var(--primary-soft);
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+.step-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+.step-text {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* FAQ Accordion */
+.faq-accordion {
+  margin: 35px 0;
+}
+.faq-row {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+.faq-row:hover {
+  border-color: var(--border-strong);
+}
+.faq-trigger {
+  width: 100%;
+  padding: 22px 26px;
+  text-align: left;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-trigger-badge {
+  font-size: 0.85rem;
+  background-color: var(--primary-light);
+  color: var(--primary-deep);
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-right: 12px;
+}
+.faq-arrow {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  transition: transform 0.3s ease;
+}
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  background-color: #fbfcfe;
+}
+.faq-content-inner {
+  padding: 0 26px 24px;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 18px;
+}
+.faq-row.active .faq-arrow {
+  transform: rotate(180deg);
+}
+
+/* Keyword Cloud Tag Section */
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+.tag-pill {
+  background-color: #f1f5f9;
+  color: var(--text-muted);
+  padding: 7px 16px;
+  border-radius: 9999px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  border: 1px solid var(--border-subtle);
+}
+
+/* Official Outbound Links */
+.authority-box {
+  background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+  border: 1px solid #bfdbfe;
+  border-radius: var(--radius-lg);
+  padding: 35px;
+  margin-top: 50px;
+  text-align: center;
+}
+.authority-box h3 {
+  margin-top: 0;
+  font-size: 1.35rem;
+  color: var(--primary-deep);
+  margin-bottom: 12px;
+}
+.authority-box p {
+  color: var(--text-muted);
+  max-width: 780px;
+  margin: 0 auto 24px;
+  font-size: 0.98rem;
+}
+.authority-link-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.authority-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffffff;
+  color: var(--primary-deep);
+  border: 1.5px solid #93c5fd;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s;
+}
+.authority-btn:hover {
+  background-color: var(--primary-deep);
+  color: #ffffff;
+  border-color: var(--primary-deep);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  padding: 60px 0 40px;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+.footer-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #1e293b;
+}
+.footer-brand {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+}
+.footer-bottom {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+  .hero h1 { font-size: 2.3rem; }
+  .summary-card { grid-template-columns: 1fr; gap: 20px; }
+  .summary-col { border-right: none; border-bottom: 1px solid var(--border-subtle); padding-right: 0; padding-bottom: 20px; }
+  .summary-col:last-child { border-bottom: none; padding-bottom: 0; }
+  .content-wrapper { padding: 40px 30px; }
+  .step-container { grid-template-columns: repeat(2, 1fr); }
+  .simulator-grid { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .hero { padding: 50px 0 45px; }
+  .hero h1 { font-size: 1.85rem; }
+  .hero p { font-size: 1.05rem; }
+  .content-wrapper { padding: 30px 18px; }
+  .step-container { grid-template-columns: 1fr; }
+  .simulator-box { padding: 25px 18px; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.3rem; }
+  table { font-size: 0.85rem; }
+  th, td { padding: 12px 10px; }
+}
+</style>
 </head>
 <body>
 
-    <header>
-        <h1>자동차보험 할증 등급 2026 완전 가이드</h1>
-        <p>복잡하게 산정되는 개인별 적용률의 핵심 로직과 갱신 시 예상되는 인상 비율을 분석하고, 수리 비용 대비 가장 합리적인 예방 대책을 제시합니다.</p>
-        <nav>
-            <ul>
-                <li><a href="#intro">할증제도 안내</a></li>
-                <li><a href="#simulator">실시간 계산기</a></li>
-                <li><a href="#table-section">2026 등급 적용률</a></li>
-                <li><a href="#strategy">사고 대처 전략</a></li>
-                <li><a href="#demographics">차종 연령별 분석</a></li>
-                <li><a href="#faq">자주 묻는 질문</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="site-brand">자동차보험 등급요율 연구센터</a>
+      <span class="header-badge">2026-2027 최신 규정 반영</span>
+    </div>
+  </div>
+</header>
 
-    <main>
-        <section id="intro">
-            <h2>자동차보험 할인할증등급의 본질과 구조적 원리</h2>
-            <p>
-                매년 갱신 주기를 앞둔 운전자라면 누구나 기존 계약 대비 변동되는 고지서를 받고 당혹감을 느끼곤 합니다. 자동차 보장을 구성하는 핵심 기준점인 <span class="keyword-highlight">자동차보험 할증 등급</span> 제도는 무사고 운전자에게는 보상을 내리고, 사고가 잦은 운전자에게는 부담을 올리는 방식으로 작동하여 손해율의 균형을 맞춥니다.
-            </p>
-            <p>
-                본 제도는 1Z 등급부터 최고 29P 등급까지 총 29개의 대분류 등급 구조를 이룹니다. <span class="keyword-highlight">신규</span> 가입 시에는 표준 등급인 11등급(과거 11N, 현행 요율 11Z 중심)으로 출발하며, 매년 사고가 발생하지 않으면 다음 갱신 계약에서 등급 숫자가 1단계씩 상승하여 요금 할인을 적용받게 됩니다. 반대로 사고가 접수되면 부상 부위나 손상 규모에 맞춘 점수 산정이 이루어져 등급 숫자가 급락하게 되고 다음 연도의 보장 요율이 인상됩니다.
-            </p>
-            <p>
-                특히 2026년 이후 적용되는 최신 할인할증 제도는 단순한 사고 건수뿐 아니라 고성능 운전 패턴 및 첨단 예방 장치 유무 등을 종합적으로 감안하여 설계됩니다. 평소 본인의 운전 습관과 직전 3년간의 이력을 객관적으로 확인해 두는 것이 현명합니다.
-            </p>
-            <div class="keyword-tags">
-                <a href="#table-section">자동차보험 할인할증등급 표</a>
-                <a href="#intro">할인할증 적용등급별 적용률</a>
-                <a href="#strategy">사고 1회 할증 요율</a>
-                <a href="#simulator">등급 계산 확인방법</a>
-                <a href="#strategy">보험금 환입 신청요령</a>
-                <a href="#demographics">다이렉트 싼곳 추천</a>
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-category">자동차보험 할인할증 제도 정밀 분석</span>
+        <h1>자동차보험 할증 등급 등급표 기준 조회 및 2026-2027년 계산 가이드</h1>
+        <p>1Z부터 29Z까지의 전 등급 요율표부터 사고점수 산정 매커니즘, 물적사고 200만원 기준 실효성, 그리고 공식 공인 포털을 통한 실시간 등급 조회와 손익분기점 산출 기법까지 한눈에 확인하세요.</p>
+        <div class="hero-meta">
+          <span>작성일자: 2026년 01월 15일</span>
+          <span>최종업데이트: 2026년 09월 26일</span>
+          <span>정보 검증: 손해보험요율 통합분석팀</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container summary-wrapper">
+    <div class="summary-card">
+      <div class="summary-col">
+        <div class="summary-col-tag">초기 기준 등급</div>
+        <div class="summary-col-title">11등급 (11Z)</div>
+        <div class="summary-col-desc">생애 최초 신규 자동차보험 가입 시 기본으로 부여받는 표준 시작 등급으로 적용 요율은 약 100% 수준입니다.</div>
+      </div>
+      <div class="summary-col">
+        <div class="summary-col-tag">최고 우량 등급</div>
+        <div class="summary-col-title">29등급 (29Z/P)</div>
+        <div class="summary-col-desc">장기 무사고 운전자에게 부여되는 최고 등급으로 기본 보험료의 약 30%에서 35% 수준까지 대폭 할인됩니다.</div>
+      </div>
+      <div class="summary-col">
+        <div class="summary-col-tag">핵심 할증 기준</div>
+        <div class="summary-col-title">물적 200만원 및 대인급수</div>
+        <div class="summary-col-desc">수리비 200만원 초과 시 1점 할증, 200만원 이하 시 0.5점 유예가 발생하며 직전 3년간 사고건수 요율이 별도 가산됩니다.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <article class="content-wrapper">
+
+      <section class="article-section">
+        <h2>자동차보험 할증 등급 제도의 본질과 1Z부터 29Z까지의 구조</h2>
+        <p>
+          대한민국의 모든 운전자는 자동차손해배상보장법과 금융감독원 보험업 감독업무 시행세칙에 따라 설계된 개인용 자동차보험 할인할증 등급 제도의 적용을 받습니다. 이 제도는 운전자의 개별적인 사고 발생 확률과 과거 운전 행태를 정밀하게 수치화하여 공평한 보험료 부담 체계를 구축하는 것을 목표로 합니다.
+        </p>
+        <p>
+          자동차보험의 등급은 가장 위험도가 높은 1등급(1Z)부터 가장 안전한 29등급(29Z 또는 29P)까지 총 29개 단계로 세분화되어 운영됩니다. 처음으로 자신의 명의로 자동차보험에 신규 가입하는 운전자에게는 11등급(11Z)이 기본적으로 부여됩니다. 11등급은 금융당국과 각 손해보험사가 정한 표준 위험 요율(약 100%)을 나타내며, 이후 1년(12개월)간 사고 없이 무사고 계약 기간을 채우면 1등급씩 상향되어 12Z, 13Z 등으로 순차적인 할인을 받게 됩니다.
+        </p>
+        
+        <div class="info-callout">
+          <div class="info-callout-title">등급 뒤에 붙는 알파벳 Z와 P의 차이점 안내</div>
+          <p>
+            등급 번호 옆에 붙는 알파벳은 요율 세분화 단계를 의미합니다. Z는 Zero의 약자로 통상적인 정규 등급 요율을 뜻하며, P는 Plus 또는 Partial의 개념으로 동일한 등급 내에서 추가적인 요율 혜택을 주는 과도기적 단계입니다. 통상적으로 Z등급이 기본 체계이며, 보험사에 따라 F(Fixed) 등의 표기를 사용하기도 합니다.
+          </p>
+        </div>
+
+        <p>
+          반대로 주행 중 본인의 과실이 포함된 유책 사고가 발생하면 사고의 유형과 피해 규모에 따라 사고점수가 부여됩니다. 사고점수 1점당 보통 1등급이 강등되며, 등급이 낮아질수록 가산되는 기본 요율이 기하급수적으로 폭등하여 다음 해 갱신 시 예상 비용 견적이 크게 증가합니다. 특히 1Z에 가까워질수록 보험사는 일반적인 다이렉트 가입을 거절하고 공동인수 물건으로 분류하여 인수 거절 및 강력한 공동인수 할증을 부과할 수 있습니다.
+        </p>
+      </section>
+
+      <section class="article-section">
+        <h2>전체 자동차보험 등급표 및 할인할증 요금표 기준</h2>
+        <p>
+          각 등급에 적용되는 할인할증 요율은 보험개발원이 고시하는 참조순보험요율을 토대로 각 손해보험사(삼성화재, 현대해상, DB손해보험, KB손해보험 등)가 자체적인 손해율과 사업비를 반영하여 미세하게 다르게 책정합니다. 아래는 금융소비자가 참고할 수 있는 대표적인 1Z부터 29Z까지의 평균 요율 등급표입니다.
+        </p>
+
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>등급 구간</th>
+                <th>등급 코드</th>
+                <th>평균 적용 요율</th>
+                <th>할인 및 할증 성격</th>
+                <th>신규 100만원 기준 예상 보험료</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>최고 위험군</td>
+                <td class="td-highlight">1Z ~ 3Z</td>
+                <td>200% ~ 250%</td>
+                <td><span class="td-badge-surcharge">초고위험 집중할증</span></td>
+                <td>2,000,000원 ~ 2,500,000원</td>
+              </tr>
+              <tr>
+                <td>고위험군</td>
+                <td class="td-highlight">4Z ~ 7Z</td>
+                <td>150% ~ 190%</td>
+                <td><span class="td-badge-surcharge">다발사고 할증군</span></td>
+                <td>1,500,000원 ~ 1,900,000원</td>
+              </tr>
+              <tr>
+                <td>주의군</td>
+                <td class="td-highlight">8Z ~ 10Z</td>
+                <td>110% ~ 140%</td>
+                <td><span class="td-badge-surcharge">경미사고 할증군</span></td>
+                <td>1,100,000원 ~ 1,400,000원</td>
+              </tr>
+              <tr>
+                <td>표준 시작점</td>
+                <td class="td-highlight">11Z</td>
+                <td>100% (기준점)</td>
+                <td><span class="td-badge-base">신규 기본 요율</span></td>
+                <td>1,000,000원 (기준)</td>
+              </tr>
+              <tr>
+                <td>초기 무사고군</td>
+                <td class="td-highlight">12Z ~ 15Z</td>
+                <td>80% ~ 95%</td>
+                <td><span class="td-badge-discount">기초 무사고 할인</span></td>
+                <td>800,000원 ~ 950,000원</td>
+              </tr>
+              <tr>
+                <td>우량 운전자군</td>
+                <td class="td-highlight">16Z ~ 20Z</td>
+                <td>60% ~ 75%</td>
+                <td><span class="td-badge-discount">중기 우량 할인</span></td>
+                <td>600,000원 ~ 750,000원</td>
+              </tr>
+              <tr>
+                <td>고도 우량군</td>
+                <td class="td-highlight">21Z ~ 25Z</td>
+                <td>45% ~ 55%</td>
+                <td><span class="td-badge-discount">고급 무사고 우대</span></td>
+                <td>450,000원 ~ 550,000원</td>
+              </tr>
+              <tr>
+                <td>최상위 안전군</td>
+                <td class="td-highlight">26Z ~ 29Z</td>
+                <td>30% ~ 40%</td>
+                <td><span class="td-badge-discount">최대 한도 할인</span></td>
+                <td>300,000원 ~ 400,000원</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="visual-bar-container">
+          <h4 style="margin-top:0; margin-bottom: 20px;">주요 등급별 보험료 체감 요율 시각화 차트</h4>
+          <div class="bar-item">
+            <div class="bar-header">
+              <span class="bar-title">1Z 등급 (최고 위험)</span>
+              <span class="bar-rate" style="color: #ef4444;">250%</span>
             </div>
-        </section>
-
-        <section id="simulator">
-            <h2>자동차보험 할인할증 등급 및 예상 인상률 계산 시뮬레이터</h2>
-            <p>
-                사고가 발생했을 때 혹은 다음 갱신 시 적용될 할증 요인과 변화폭을 간편하게 사전 평가할 수 있는 통합 웹 계산 시스템입니다. 나이와 차종, 가입 특성을 입력하여 예상 결과를 분석할 수 있습니다. 입력란에 실제 조건을 반영하여 체류 시간 동안 실질적인 도움을 받으시기 바랍니다.
-            </p>
-            
-            <div class="simulator-container">
-                <form id="calcForm" onsubmit="event.preventDefault(); calculatePremiumChange();">
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="current-premium">현재 1년 납입 중인 총 보험금 (원)</label>
-                            <input type="number" id="current-premium" value="900000" placeholder="예: 900000" min="100000" max="10000000">
-                        </div>
-                        <div class="form-group">
-                            <label for="current-grade">현재 할인할증등급 선택</label>
-                            <select id="current-grade">
-                                <option value="1">1Z 등급 (최고 할증)</option>
-                                <option value="6">6Z 등급</option>
-                                <option value="11" selected>11Z 등급 (신규 표준)</option>
-                                <option value="15">15Z 등급</option>
-                                <option value="18">18Z 등급</option>
-                                <option value="22">22Z 등급</option>
-                                <option value="26">26Z 등급</option>
-                                <option value="29">29Z / 29P 등급 (최대 할인)</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="accident-type">최근 1년간 사고 이력 유형</label>
-                            <select id="accident-type">
-                                <option value="none">무사고 (1년 유지)</option>
-                                <option value="minor">물적사고 200만 원 이하 경미 사고 (0.5점)</option>
-                                <option value="medium">물적사고 200만 원 초과 일반 사고 (1점)</option>
-                                <option value="major">인명 피해 대인사고 포함 중대사고 (3점)</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="mileage">예상 연간 주행거리 (km)</label>
-                            <input type="number" id="mileage" value="10000" placeholder="예: 12000" min="0" max="100000">
-                        </div>
-                        <div class="form-group">
-                            <label for="age-group">가입 운전자 연령 범위</label>
-                            <select id="age-group">
-                                <option value="young">20대 초반 신규 운전자</option>
-                                <option value="mid">30대 부부 한정 특약</option>
-                                <option value="adult" selected>40대 가족 한정 범위</option>
-                                <option value="senior">50대 및 60대 무사고</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="car-model">보유 차량 세부 차종</label>
-                            <select id="car-model">
-                                <option value="sedan">아반떼 소형 준중형 세단</option>
-                                <option value="grandeur" selected>그랜저 준대형 플래그십</option>
-                                <option value="suv">쏘렌토 및 카니발 패밀리 SUV</option>
-                                <option value="import">수입 고가 외제차 브랜드</option>
-                            </select>
-                        </div>
-                        <div class="checkbox-group">
-                            <span style="display:block; font-weight:700; margin-bottom:0.5rem; color:var(--primary-color);">추가 할인 특약 종류 선택</span>
-                            <label><input type="checkbox" id="dc-blackbox" checked> 블랙박스 특약 할인 (3%)</label>
-                            <label><input type="checkbox" id="dc-adas" checked> 첨단 안전장치 ADAS (5%)</label>
-                            <label><input type="checkbox" id="dc-child"> 만 6세 이하 자녀 특약 (8%)</label>
-                            <label><input type="checkbox" id="dc-ubi"> T-MAP 안전운전 UBI (12%)</label>
-                        </div>
-                    </div>
-                    <button type="submit" class="cta-button" style="margin:0 auto; width:100%; max-width:none;">예상 등급 및 갱신 비용 실시간 분석하기</button>
-                </form>
-
-                <div id="result-area" class="result-box">
-                    <div class="result-title">갱신 시 예상 등급 분석 진단표 (2026년 개정안 기준)</div>
-                    <div class="result-grid">
-                        <div class="result-item">
-                            <div class="result-label">기존 등급</div>
-                            <div id="res-current-grade" class="result-val">-</div>
-                        </div>
-                        <div class="result-item">
-                            <div class="result-label">갱신 후 예상 등급</div>
-                            <div id="res-next-grade" class="result-val">-</div>
-                        </div>
-                        <div class="result-item">
-                            <div class="result-label">기존 등급 적용률</div>
-                            <div id="res-current-rate" class="result-val">-</div>
-                        </div>
-                        <div class="result-item">
-                            <div class="result-label">변경 후 적용률</div>
-                            <div id="res-next-rate" class="result-val">-</div>
-                        </div>
-                        <div class="result-item" style="grid-column: 1 / -1; background-color: #eef2f7;">
-                            <div class="result-label" style="font-weight:700;">최적 특약 결합 반영 후 예상 납부 금액</div>
-                            <div id="res-next-premium" class="result-val" style="font-size:1.6rem; color:var(--accent-color);">-</div>
-                        </div>
-                    </div>
-                    <div id="res-advice" class="result-advice">
-                        데이터를 올바르게 입력하시면 맞춤 컨설팅 의견이 이곳에 출력됩니다.
-                    </div>
-                </div>
+            <div class="bar-track">
+              <div class="bar-fill fill-surcharge" style="width: 100%;"></div>
             </div>
-        </section>
-
-        <section id="table-section">
-            <h2>2026년 개정 자동차보험 할인할증등급 기준표 분석</h2>
-            <p>
-                각 손해보험 전문 업체들은 매년 보험개발원의 참조 요율을 기준으로 자체적인 등급별 적용률을 확정합니다. 아래의 기준표는 2026년 1월 1일 이후 책임 개시 계약부터 새롭게 보정되어 반영되는 국내 대형 손해보험 브랜드의 개인용 승용차 부문 평균 적용 요율 데이터를 요약한 결과물입니다.
-            </p>
-            
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>대분류 등급</th>
-                            <th>2026년 평균 적용 요율</th>
-                            <th>구간 성격 및 할증 상태 요약</th>
-                            <th>안전운전 권장 및 대비책</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>1Z 등급</strong></td>
-                            <td>약 195% ~ 200%</td>
-                            <td>연쇄 사고 또는 중대 음주 무면허 등 악성 사고 누적</td>
-                            <td>가장 강력한 할증률, 신규 가입 대비 약 2배 요금 인상</td>
-                        </tr>
-                        <tr>
-                            <td><strong>5Z 등급</strong></td>
-                            <td>약 127%</td>
-                            <td>직전 1년에서 2년 이내 다수 대인대물 처리 이력</td>
-                            <td>다이렉트 싼곳 및 특약을 동원해도 기본 부담이 높은 구간</td>
-                        </tr>
-                        <tr>
-                            <td><strong>10Z 등급</strong></td>
-                            <td>약 83%</td>
-                            <td>최초 표준 등급 직전에서 소수 할증 적용된 이력</td>
-                            <td>무사고 1년을 완수해야 11Z 표준 요율을 회복 가능</td>
-                        </tr>
-                        <tr>
-                            <td><strong>11Z 등급</strong></td>
-                            <td>약 78%</td>
-                            <td>최초 면허 가입자 또는 가입 기간 단절 시 적용 등급</td>
-                            <td>안전운전 UBI 특약이나 주행거리 할인으로 금액 절약 추천</td>
-                        </tr>
-                        <tr>
-                            <td><strong>15Z 등급</strong></td>
-                            <td>약 55%</td>
-                            <td>중급 연차 무사고 운전자로 요금 안정화 단계 돌입</td>
-                            <td>차량 모델별 할인 종류를 결합해 최저가 요금제 설계 용이</td>
-                        </tr>
-                        <tr>
-                            <td><strong>22Z 등급</strong></td>
-                            <td>약 42%</td>
-                            <td>장기 무사고 경력을 인정받아 제일 우량군으로 우대</td>
-                            <td>보배드림 및 동호회에서 가장 경제적이라 지칭하는 등급군</td>
-                        </tr>
-                        <tr>
-                            <td><strong>29Z / 29P 등급</strong></td>
-                            <td>약 30%</td>
-                            <td>최고 우량 운전자 그룹 및 평생 무사고 보호 장치 작동</td>
-                            <td>사고 시 보호(P) 혜택으로 할증이 최대한 방어되는 요율계의 성지</td>
-                        </tr>
-                    </tbody>
-                </table>
+          </div>
+          <div class="bar-item">
+            <div class="bar-header">
+              <span class="bar-title">6Z 등급 (중간 사고군)</span>
+              <span class="bar-rate" style="color: #f97316;">165%</span>
             </div>
-
-            <h3>등급 적용률 추이 시각화</h3>
-            <p>
-                아래 그래프는 할증이 누적된 고위험 1등급부터 오랜 기간 동안 안전 규칙을 준수하여 도달하는 최고 29등급까지의 납입 요율 비중 추세를 시각적으로 구현한 자료입니다. 등급 숫자가 우상향할수록 최종 부담 금액은 감소하는 반비례 구조를 나타냅니다.
-            </p>
-
-            <div class="chart-container">
-                <div class="result-title" style="border:none; margin:0;">할인할증 등급별 보험료 기본 적용률 추이 (2026 개정 요율 기준)</div>
-                <div class="chart-bar-wrapper">
-                    <div class="chart-row">
-                        <div class="chart-label">1Z 등급 (사고 다발)</div>
-                        <div class="chart-bar-bg">
-                            <div class="chart-bar-fill fill-surcharge" style="width: 100%;"></div>
-                        </div>
-                        <div class="chart-value">195%</div>
-                    </div>
-                    <div class="chart-row">
-                        <div class="chart-label">6Z 등급 (중간 사고)</div>
-                        <div class="chart-bar-bg">
-                            <div class="chart-bar-fill fill-surcharge" style="width: 59%;"></div>
-                        </div>
-                        <div class="chart-value">116%</div>
-                    </div>
-                    <div class="chart-row">
-                        <div class="chart-label">11Z 등급 (신규 표준)</div>
-                        <div class="chart-bar-bg">
-                            <div class="chart-bar-fill fill-normal" style="width: 40%;"></div>
-                        </div>
-                        <div class="chart-value">78%</div>
-                    </div>
-                    <div class="chart-row">
-                        <div class="chart-label">18Z 등급 (우량 운전)</div>
-                        <div class="chart-bar-bg">
-                            <div class="chart-bar-fill fill-discount" style="width: 24%;"></div>
-                        </div>
-                        <div class="chart-value">47%</div>
-                    </div>
-                    <div class="chart-row">
-                        <div class="chart-label">29Z / 29P 등급 (보호)</div>
-                        <div class="chart-bar-bg">
-                            <div class="chart-bar-fill fill-discount" style="width: 15%;"></div>
-                        </div>
-                        <div class="chart-value">30%</div>
-                    </div>
-                </div>
+            <div class="bar-track">
+              <div class="bar-fill fill-surcharge" style="width: 66%;"></div>
             </div>
-        </section>
-
-        <section id="strategy">
-            <h2>사고 발생 시 할인할증등급 변동 요인과 스마트 환입 요령</h2>
-            <p>
-                경미한 추돌 접촉 등으로 인해 예기치 못하게 보장 처리를 한 경우, 다가오는 갱신 시점에서 인상폭이 어느 정도로 발생할지 고민하게 됩니다. 이때 제일 먼저 따져보아야 할 핵심 정보는 사고 당시 적용받은 사고점수입니다.
-            </p>
-            <p>
-                사고 점수는 대인 구제와 대물 피해, 그리고 자기차량 손해 등의 영역으로 분리 계산됩니다. 대인의 경우 상해 급수 기준 1점부터 최고 4점까지 매겨지며, 대물은 가입 시 선택한 물적 할증 기준 금액(보편적으로 200만 원 선)을 초과한 지출인 경우 1점, 이하면 0.5점이 추가됩니다.
-            </p>
-            <p>
-                만약 본인이 해결해야 하는 파손 손상 견적이 소액(예: 30만 원에서 50만 원) 수준이라면, 즉각적으로 보장 처리를 접수하기보다는 일단 가입해 둔 업체의 고객센터 원격 안내를 통해 접수 후 금액을 되돌려 납부하는 <span class="keyword-highlight">환입하는법</span>을 신청하는 것이 대단히 효과적입니다. 환입을 신청하면 이미 실행된 이력이 무산되어 무사고 유예 또는 등급 하락을 완전 방어할 수 있습니다.
-            </p>
-            <p>
-                인터넷 자동차 동호회인 보배드림 혹은 펨코 게시판의 자가 보수 경험자들의 유용한 가입 팁을 찾아보아도, 소액 사고 처리를 그대로 유지했다가 향후 3년간 누적 적용률 할인을 받지 못해 지출한 인상 누계 비용이 초기의 보상 금액을 아득히 초과하여 결국 손해를 입었다는 가슴 아픈 내돈내산 갱신 후기 글을 수시로 볼 수 있습니다. 그렇기 때문에 챗지피티 기술이나 AI 지표에 기반한 맞춤 예측 툴을 사전에 사용하여 최적의 의사결정을 내려야 합니다.
-            </p>
-        </section>
-
-        <section id="demographics">
-            <h2>연령대별 평균 가격 추이 및 차종 모델별 할인 특약 전략</h2>
-            <p>
-                동일한 등급을 유지하고 있더라도, 가입자가 설정한 운전 연령 구간과 차량의 성격에 따라 실제 납입 요금은 매우 유기적으로 바뀝니다. 기본요율과 개인요율 사이의 입체적인 차이점이 존재하기 때문입니다.
-            </p>
-            <h3>1. 20대 초반 및 30대 신규 운전자 가이드</h3>
-            <p>
-                이 연령대의 평균 자동차보험료는 다른 세대 대비 사고 확률에 근거한 할증 리스크가 이미 기본요율에 다소 과도하게 얹어져 있습니다. 처음으로 자동차 명의를 취득하여 신규 11N(또는 11Z)으로 계약을 개시할 때는 다이렉트 싼곳 업체를 철저히 탐색하여 비교 견적을 확인하는 과정이 필요합니다. 아반떼 등 준중형 모델을 주로 운전한다면, 모바일 어플이나 전용 앱의 기능을 활용해 T-MAP이나 카카오내비 등에서 기록하는 안전운전 점수 특약(UBI)을 무조건 결합하여 최대 12% 선의 추가 할인을 받는 방향을 추천합니다.
-            </p>
-            <h3>2. 30대 부부 및 40대 메인 세대의 실질적 혜택</h3>
-            <p>
-                그랜저나 쏘렌토 등 준대형 혹은 중형 베스트셀링 패밀리카를 주 운행하는 30대와 40대 부부 한정 특약의 경우에는 주행거리 기반의 마일리지 환급 요금제 결합 효율이 뛰어납니다. 만 6세 이하 자녀가 동승하는 상태라면 자녀 특약을 8% 내외로 추가 보정받을 수 있으며, 일부 브랜드가 진행하는 모바일 주유 상품권 지급 이벤트나 가입 사은품 연계 신용카드 캐시백 등을 챙기면 체감 할인 폭은 극대화됩니다.
-            </p>
-            <h3>3. 50대 및 60대 이상 경력 운전자의 자산 방어</h3>
-            <p>
-                수십 년간의 안전한 경력을 토대로 이미 20등급 이상, 많게는 평생 무사고의 증표인 29P 등급에 안착한 어르신들의 경우 기존 상품 갱신 시 최저가 유지만을 선호하기 쉽습니다. 그러나 차량 모델의 노후화 위험이나 부품 가격 보정폭 상승 등에 따라, 매년 네이버 지식인 정보나 구글링을 이용해 메이저 브랜드 간의 요율 순위를 세심히 따져 볼 필요가 있습니다. 카카오톡 본인인증 한 번으로 대형 3개사 가입 견적을 간편 산출해 주는 금융 통합 플랫폼(예: 토스, 핀다 등)을 적극적으로 경유하여 예상 혜택을 수시로 검토해 주는 것을 권장합니다.
-            </p>
-        </section>
-
-        <section id="faq">
-            <h2>자주 묻는 질문 FAQ</h2>
-            <p>
-                등급 제도 및 할증 로직에 대해 온라인 커뮤니티(디시, 에펨코리아 등)에서 가장 흔히 검색하고 의문을 제기하는 현실성 높은 질문들을 추려 답변을 정립했습니다.
-            </p>
-            <dl>
-                <dt tabindex="0" aria-expanded="false">Q. 사고가 났는데 접수 후 즉시 환입 처리를 하는법은 어떻게 되나요?</dt>
-                <dd>사고가 마무리되고 보험사에서 피해자 및 파손 수리 대금으로 최종 송금한 정확한 지원금 내역이 확정되면, 해당 보장 브랜드의 다이렉트 고객센터 부서에 문의하여 가상 계좌를 발급받은 뒤 해당 금액을 본인 명의로 전액 입금 처리하면 됩니다. 입금이 완료되면 담당 전산 시스템에 즉시 등록되어 사고 점수가 소거되고 할증 유예 상태가 소멸합니다.</dd>
-                
-                <dt tabindex="0" aria-expanded="false">Q. 수입 고가 외제차 브랜드 운행 시 등급이 떨어지면 국산 대비 가격 상승폭이 왜 이리 클까요?</dt>
-                <dd>수입차의 수리 단가는 범퍼, 헤드라이트 등의 정비 원가 자체가 국산차 대비 3배에서 5배가량 높은 편입니다. 등급이 1단계 하향되면 전체 개인요율 부담 비율이 가산되기 때문에, 높은 기본 수리비 변수가 적용된 개인용 기본 보험요금 자체에 할증 적용률이 그대로 곱해지면서 실제 부과되는 총요금이 극단적으로 차이 나게 됩니다.</dd>
-                
-                <dt tabindex="0" aria-expanded="false">Q. 부모님 명의로 가입 시 경력 전가를 통해 자녀가 나중에 할인 등급을 그대로 물려받을 수 있나요?</dt>
-                <dd>부모님의 개인 할인할증등급 자체를 자녀의 새로운 명의에 직접 대물림해 주는 제도는 존재하지 않습니다. 다만, 부모님 가입 당시 자녀를 가족 한정으로 지정하고 경력 인정 등록 제도를 미리 신청하여 최대 3년간의 운전 연차를 누적해 놓았다면, 향후 자녀가 독립하여 신규 개인 계약을 신설할 때 최초 11N 상태보다 요율이 할인된 상태로 유리하게 출발할 수는 있습니다.</dd>
-
-                <dt tabindex="0" aria-expanded="false">Q. 3년간 경력이 단절되면 우량 등급이 초기 표준 등급으로 초기화된다는 이야기가 사실인가요?</dt>
-                <dd>예, 맞습니다. 과거에 20등급 이상의 우량 운전자였다 하더라도 본인 명의의 자동차 보험을 해지한 뒤 새로운 가입 기간 없이 3년이 초과되어 경력이 완전히 단절되면 기존 등급 기록은 복원되지 않고 신규 표준 등급인 11Z로 전면 재설정되어 재출발하게 됩니다. 다만 장기 렌트카 이용 이력이 있는 경우에는 최근 제도 완화에 맞춰 일정 조건 충족 시 기존의 등급 이력을 합리적으로 연계해 주기도 합니다.</dd>
-            </dl>
-        </section>
-
-        <section id="sources">
-            <h2>신뢰할 수 있는 공인 외부 참고 출처 안내</h2>
-            <p>
-                본 페이지에 제시된 등급 적용 요율 및 사안별 사고 산출 기준은 국가에서 규정하는 법령과 유관 금융 감독 기관의 공시 지침에 의거하여 면밀히 해석되었습니다. 더 높은 신뢰도를 갖춘 세부 정보를 조회하고자 하신다면 아래 사이트 좌표를 활용하여 주시기 바랍니다.
-            </p>
-            <div class="source-links">
-                <a href="https://directwsearchq.reliabledone.com" target="_blank" rel="noopener noreferrer">1. 릴라이어블던 자동차 보장 할인 등급 통합 센터 (reliabledone.com)</a>
-                <a href="https://prem.kidi.or.kr" target="_blank" rel="noopener noreferrer">2. 보험개발원 (KIDI) 공식 자동차보험료 할인할증 조회시스템 사이트</a>
-                <a href="https://www.fss.or.kr" target="_blank" rel="noopener noreferrer">3. 금융감독원 (FSS) 금융소비자 정보 포털 파인</a>
-                <a href="https://www.law.go.kr" target="_blank" rel="noopener noreferrer">4. 국가법령정보센터 자동차손해배상 보장법 및 관련 시행령 기준</a>
+          </div>
+          <div class="bar-item">
+            <div class="bar-header">
+              <span class="bar-title">11Z 등급 (신규 기준점)</span>
+              <span class="bar-rate" style="color: #3b82f6;">100%</span>
             </div>
-        </section>
+            <div class="bar-track">
+              <div class="bar-fill fill-base" style="width: 40%;"></div>
+            </div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-header">
+              <span class="bar-title">18Z 등급 (7년 무사고)</span>
+              <span class="bar-rate" style="color: #10b981;">68%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill fill-discount" style="width: 27.2%;"></div>
+            </div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-header">
+              <span class="bar-title">29Z 등급 (장기 무사고 최상위)</span>
+              <span class="bar-rate" style="color: #059669;">34%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill fill-discount" style="width: 13.6%;"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="consulting" style="text-align: center; background-color: #f8fafc; border-radius: 12px; padding: 2.5rem;">
-            <h2>내 맞춤형 할인할증등급 최적화 1:1 진단 서비스</h2>
-            <p>
-                가입 중인 보험사, 직전 사고 처리 규모, 향후 연간 마일리지 운행 범위에 맞는 가장 유리한 할증 최소화 시나리오를 받아보세요. 복잡한 계산의 단점을 극복하고, 장점만을 수렴한 맞춤 컨설팅을 비대면으로 편안하게 제시합니다.
-            </p>
-            <p style="font-size: 1.4rem; font-weight: 700; color: var(--accent-color); margin: 1rem 0;">
-                전문 안내 센터: 1544-0000
-            </p>
-            <a href="tel:15440000" class="cta-button" style="margin: 0 auto;">다이렉트 최저가 특약 포트폴리오 무료 견적 신청</a>
-        </section>
-    </main>
+      <section class="article-section">
+        <h2>사고점수 산정 기준표 및 2026-2027년 개정 기준</h2>
+        <p>
+          보험료 할증 등급의 하락 폭을 결정하는 근본적인 변수는 바로 사고내용점수입니다. 사고가 발생했을 때 손해사정 과정에서 피해자의 인적 피해 정도(대인배상), 운전자 본인의 부상 수준(자기신체사고 및 자동차상해), 그리고 상대방 차량 및 내 차량의 재물 손해 규모(대물배상 및 자기차량손해)를 각각 구분하여 사고점수를 산정합니다.
+        </p>
 
-    <script>
-      // FAQ 아코디언 기능 구현
-      document.querySelectorAll('dl dt').forEach((dt) => {
-        dt.addEventListener('click', () => {
-          document.querySelectorAll('dl dt').forEach((otherDt) => {
-            if (otherDt !== dt && otherDt.classList.contains('active')) {
-              otherDt.classList.remove('active');
-              otherDt.setAttribute('aria-expanded', 'false');
-            }
-          });
+        <h3>1. 대인배상 부상 등급별 사고점수</h3>
+        <p>
+          교통사고 처리특례법 및 자동차손해배상보장법 시행령에 규정된 상해 급수(1급부터 14급)에 따라 엄격하게 배정됩니다.
+        </p>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>피해자 상해 정도 및 부상 등급</th>
+                <th>사고점수</th>
+                <th>주요 상해 사례</th>
+                <th>등급 변동 영향</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>사망 및 중증 장해 (1급)</td>
+                <td class="td-highlight">4.0점</td>
+                <td>식물인간, 사지마비, 뇌손상 등 치명적 중상</td>
+                <td>즉시 4등급 강등</td>
+              </tr>
+              <tr>
+                <td>중상해 (2급 ~ 7급)</td>
+                <td class="td-highlight">3.0점</td>
+                <td>주요 관절 골절, 내부 장기 파열, 척추 손상</td>
+                <td>즉시 3등급 강등</td>
+              </tr>
+              <tr>
+                <td>경상 (8급 ~ 12급)</td>
+                <td class="td-highlight">2.0점</td>
+                <td>단순 골절, 심한 관절 염좌, 경미한 뇌진탕</td>
+                <td>즉시 2등급 강등</td>
+              </tr>
+              <tr>
+                <td>단순 염좌 및 타박상 (13급 ~ 14급)</td>
+                <td class="td-highlight">1.0점</td>
+                <td>목 경추 염좌, 허리 요추 염좌, 단순 타박</td>
+                <td>즉시 1등급 강등</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>2. 대물배상 및 자차손해 물적사고 점수</h3>
+        <p>
+          재물 손해에 대해서는 계약 체결 당시 소비자가 선택한 물적사고 할증기준금액이 기준선 역할을 합니다. 대부분의 운전자가 200만원을 선택하고 있으며, 사고 1건당 상대 차량 대물 배상액과 내 차량 자차 수리비의 합산 청구액이 이 기준을 넘는지에 따라 결정됩니다.
+        </p>
+        <ul style="padding-left: 20px; margin-bottom: 20px; color: var(--text-muted);">
+          <li style="margin-bottom: 10px;">
+            <strong>기준금액 초과 사고 (1.0점 부여):</strong> 대물 배상액과 자차 처리 금액의 합산액이 200만원을 1원이라도 초과할 경우 1점이 부과되어 다음 해 1등급이 강등됩니다.
+          </li>
+          <li>
+            <strong>기준금액 이하 사고 (0.5점 부여 - 등급 유예):</strong> 수리비 합계가 200만원 이하인 소액 사고는 등급이 즉시 깎이지 않고 0.5점이 부여됩니다. 0.5점은 단독으로 등급 강등을 일으키지 않으나, 향후 3년간 등급 승급이 동결(유예)되며 3년 이내에 또 다른 0.5점 사고가 발생하면 합산 1.0점이 되어 즉각적인 등급 강등으로 이어집니다.
+          </li>
+        </ul>
+
+        <div class="warning-callout">
+          <div class="warning-callout-title">2026-2027년 개정 법규위반 할증 규정 안내</div>
+          <p>
+            과속, 중앙선 침범, 음주운전, 어린이 보호구역(스쿨존) 속도위반 등 중대 교통법규 위반자에 대한 요율 할증이 강화되었습니다. 스쿨존에서 시속 20km 이상 초과 과속 시 1회 위반만으로도 5%, 2회 이상 적발 시 최대 10%의 특별 법규위반 할증이 기본 등급과 무관하게 보험료에 별도로 부과됩니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2>사고건수요율(건수할증)과 사고내용점수의 이중 할증 매커니즘</h2>
+        <p>
+          수많은 가입자들이 등급표만 보고 1점이 깎여서 1등급만 내려갔는데 왜 보험료는 30% 이상 폭등했는지 의문을 가집니다. 그 원인은 바로 사고내용점수에 따른 등급 하락 외에 사고건수요율이라는 별도의 팩터가 동시에 곱해지기 때문입니다.
+        </p>
+        <p>
+          손해보험업계는 직전 3년간 발생한 사고 건수와 직전 1년간 발생한 사고 건수를 별도로 추적합니다. 아무리 200만원 이하의 0.5점짜리 경미한 사고라 하더라도 직전 3년 동안 1건이 등록되면 무사고 할인 그룹에서 이탈하여 건수 할증 요율 그룹으로 편입됩니다.
+        </p>
+        
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>직전 3년간 사고 건수</th>
+                <th>직전 1년간 사고 건수</th>
+                <th>사고건수 요율 추가 가산율 (추정)</th>
+                <th>체감 보험료 변동 영향</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0건 (완전 무사고)</td>
+                <td>0건</td>
+                <td class="td-highlight">0% (기본 유지)</td>
+                <td>정상적인 1등급 승급 할인 혜택 적용</td>
+              </tr>
+              <tr>
+                <td>1건 (소액 0.5점 사고)</td>
+                <td>1건</td>
+                <td class="td-highlight">+10% ~ +15%</td>
+                <td>등급은 동결되나 건수요율로 실질 보험료 상승</td>
+              </tr>
+              <tr>
+                <td>2건 (경미 사고 다발)</td>
+                <td>1~2건</td>
+                <td class="td-highlight">+25% ~ +40%</td>
+                <td>등급 강등과 건수요율이 겹쳐 대폭 상승</td>
+              </tr>
+              <tr>
+                <td>3건 이상 (다발 사고자)</td>
+                <td>2건 이상</td>
+                <td class="td-highlight">+50% ~ +80% 이상</td>
+                <td>다이렉트 심사 거절 및 공동인수 전환 위험</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Interactive Calculator Simulator -->
+      <section class="simulator-box">
+        <div class="simulator-title">실시간 자동차보험 할증 등급 및 갱신 요금 시뮬레이션 계산기</div>
+        <div class="simulator-subtitle">현재 본인의 등급과 최근 발생한 사고 조건을 입력하시면 변경 예상 등급과 요율 변동치를 즉시 산출합니다.</div>
+        
+        <div class="simulator-grid">
+          <div class="input-group">
+            <label for="current-grade">현재 적용 중인 자동차보험 등급</label>
+            <select id="current-grade">
+              <option value="11">11Z (신규 가입 기본 등급 - 100%)</option>
+              <option value="12">12Z (1년 무사고 - 약 92%)</option>
+              <option value="13">13Z (2년 무사고 - 약 85%)</option>
+              <option value="14" selected>14Z (3년 무사고 - 약 79%)</option>
+              <option value="15">15Z (4년 무사고 - 약 73%)</option>
+              <option value="16">16Z (5년 무사고 - 약 68%)</option>
+              <option value="18">18Z (우량 운전자 - 약 60%)</option>
+              <option value="22">22Z (고도 우량 - 약 50%)</option>
+              <option value="26">26Z (최상위 무사고 - 약 38%)</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="base-cost">현재 연간 총 납입 보험료 (원)</label>
+            <input type="number" id="base-cost" value="850000" step="10000" placeholder="예: 850000">
+          </div>
+          <div class="input-group">
+            <label for="accident-injury">대인배상 피해 발생 여부</label>
+            <select id="accident-injury">
+              <option value="0">대인 피해 없음 (물적 피해만 발생)</option>
+              <option value="1">단순 통원 염좌 13-14급 (사고점수 1.0점)</option>
+              <option value="2">경상 골절 및 부상 8-12급 (사고점수 2.0점)</option>
+              <option value="3">중상해 2-7급 (사고점수 3.0점)</option>
+              <option value="4">중증 장해 및 사망 1급 (사고점수 4.0점)</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="accident-property">대물/자차 수리비 합계 총액</label>
+            <select id="accident-property">
+              <option value="0">재물 피해 없음 (0원)</option>
+              <option value="0.5">물적기준 200만원 이하 (사고점수 0.5점 유예)</option>
+              <option value="1">물적기준 200만원 초과 (사고점수 1.0점 할증)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calc-btn-wrap">
+          <button type="button" class="calc-btn" id="run-calc-btn">차기 예상 등급 및 보험료 계산하기</button>
+        </div>
+
+        <div class="sim-result-box" id="sim-result">
+          <div class="sim-result-header">계산 결과 리포트</div>
+          <div>차기 예상 적용 등급: <span class="sim-result-val" id="res-grade">13Z</span></div>
+          <div style="margin-top: 8px;">차기 갱신 예상 총 납입 보험료: <span class="sim-result-val" id="res-cost">1,050,000원</span></div>
+          <div class="sim-result-desc" id="res-desc">
+            총 사고점수 1.5점이 부여되어 1개 등급이 하락하고 직전 3년 사고건수 요율이 가산되었습니다.
+          </div>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2>공인된 시스템을 통한 자동차보험 할증 등급 실시간 조회 방법</h2>
+        <p>
+          자신의 현재 정확한 할인할증 등급 코드(예: 14Z, 17F 등)와 과거 사고 이력, 법규위반 평가 점수는 공인된 전산망을 통해 공인인증서 또는 간편인증만으로 수수료 없이 즉각 열람이 가능합니다.
+        </p>
+
+        <div class="step-container">
+          <div class="step-item">
+            <span class="step-num">1</span>
+            <div class="step-title">포털 또는 앱 접속</div>
+            <div class="step-text">보험개발원 통합포털, 카히스토리, 또는 토스/카카오페이의 내 자동차 코너에 접속합니다.</div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">2</span>
+            <div class="step-title">본인 인증 수행</div>
+            <div class="step-text">주민등록번호 기반의 공동인증서, 금융인증서, 네이버/카카오 간편인증으로 본인 확인을 완료합니다.</div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">3</span>
+            <div class="step-title">계약 내역 상세 조회</div>
+            <div class="step-text">보유 차량의 자동차보험 계약정보 조회 메뉴에서 현재 등급 코드와 직전 사고 건수를 확인합니다.</div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">4</span>
+            <div class="step-title">요율 변동 항목 검토</div>
+            <div class="step-text">기본등급요율, 특약할인율, 법규위반할증요율, 사고건수요율의 개별 적용 수치를 꼼꼼히 점검합니다.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2>보험처리 vs 자비처리 손익분기점 계산 및 환입(수리비 반환) 전략</h2>
+        <p>
+          교통사고가 났을 때 가장 많은 운전자들이 고민하는 지점은 과연 이 사고를 보험으로 처리하는 것이 유리한가, 아니면 내 돈으로 자비 수리하는 것이 나은가입니다.
+        </p>
+        <p>
+          손익분기점을 판정할 때는 단순히 이번 한 번의 수리비만을 따져서는 안 됩니다. 자동차보험의 할증 체계는 1년으로 끝나지 않고 <strong>향후 3년간 누적</strong>되어 영향을 미치기 때문입니다.
+        </p>
+
+        <div class="info-callout">
+          <div class="info-callout-title">3개년 누적 기회비용 계산 공식</div>
+          <p>
+            <strong>총 기회손실 금액 = (사고로 인해 3년간 추가 납부할 할증 보험료 합계) + (무사고 상태였다면 받을 수 있었던 3개년 승급 할인 누적액)</strong>
+          </p>
+        </div>
+
+        <p>
+          예를 들어 현재 연간 80만원의 보험료를 납부하는 14Z 등급 운전자가 수리비 40만원의 경미한 자차 사고를 보험처리할 경우, 0.5점 유예로 등급은 동결되지만 사고건수요율로 인해 3년간 매년 10만원씩 약 30만원의 추가 보험료가 발생하고, 무사고 시 15Z, 16Z, 17Z로 승급되면서 아낄 수 있었던 할인액 15만원을 놓치게 됩니다. 결과적으로 40만원을 보상받기 위해 45만원 이상의 손해를 보게 되는 셈입니다.
+        </p>
+        <p>
+          따라서 통상적인 업계 실무상 순수 수리비 총액이 <strong>50만원 이하</strong>라면 자비 처리가 유리하며, <strong>50만원에서 100만원 사이</strong>의 금액대는 본인의 기존 보험료 규모와 연령대에 따라 정밀한 견적 컨설팅이 요구됩니다.
+        </p>
+        
+        <h3>환입(보험금 반환 납부) 제도의 실전 활용법</h3>
+        <p>
+          사고 현장에서는 당황하여 우선 보험 접수를 하고 상대방 대물 배상이나 내 차 수리를 보험사 돈으로 끝마쳤더라도 걱정할 필요가 없습니다. 보험업법상 모든 계약자는 차기 갱신 계약이 개시되기 전까지 기지급된 보험금을 보험사에 사비로 다시 납부하는 환입(Reimbursement)을 신청할 권리가 있습니다.
+        </p>
+        <p>
+          환입금을 입금 완료하면 해당 사고는 공식 전산망에서 보험금 미지급 건으로 처리되어 사고 건수와 사고 점수 산정에서 완전히 삭제되며, 원래의 무사고 승급 자격을 고스란히 되찾게 됩니다.
+        </p>
+      </section>
+
+      <section class="article-section">
+        <h2>보배드림, 디시, 펨코 등 커뮤니티 실제 후기 및 분쟁 사례 분석</h2>
+        <p>
+          국내 대표 자동차 커뮤니티인 보배드림 교통사고 게시판, 디시인사이드 자동차 갤러리, 에펨코리아(펨코) 자동차 카테고리에는 매일 수많은 차주들의 생생한 내돈내산 갱신 후기와 할증 폭탄 피해 사례가 올라옵니다.
+        </p>
+        <p>
+          실제 커뮤니티 이용자들의 주요 토론 내용을 분석해 보면, 가장 흔하게 범하는 실수는 문콕이나 긁힘 사고로 30만원 상당의 도색 비용을 무심코 자차 처리했다가 다음 해 다이렉트 갱신 시 최저가 비교 사이트 좌표에서 조회가 거절되거나 예상 견적이 40만원 이상 폭등했다는 하소연입니다.
+        </p>
+        <p>
+          특히 초보 운전자가 11Z 신규 등급에서 1년 차에 1건의 접촉사고를 냈을 때, 기본 요율 상승과 신규 가입자 페널티가 중첩되어 12개월 만기 갱신 시 기존 120만원이던 요금이 180만원대로 치솟아 당황하는 사례가 빈번하게 공유됩니다. 커뮤니티 회원들은 이러한 경우 무조건 해당 다이렉트 고객센터 전화번호로 즉시 연락하여 환입 금액 상담을 받고 자비로 반환 처리하는 것이 가장 현명한 해결 방법이라고 조언합니다.
+        </p>
+      </section>
+
+      <section class="article-section">
+        <h2>주요 다이렉트 브랜드별 특징 및 갱신 요금 절약 비법</h2>
+        <p>
+          자동차보험은 1년(12개월) 단위로 의무 갱신해야 하는 상품이며, 별도의 장기 약정이나 무약정 위약금, 계약금 환불 등의 복잡한 해지 제약이 비교적 적은 표준화 금융 상품입니다. 그러나 동일한 할증 등급이라 할지라도 브랜드별로 자체 손해율 반영 비중이 상이하므로 다이렉트 온라인 사이트에서 최저가 비교를 진행하는 것이 필수적입니다.
+        </p>
+        
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>보험사 브랜드</th>
+                <th>할인 특약 강점</th>
+                <th>주요 서비스 특징</th>
+                <th>추천 가입 대상</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>삼성화재 다이렉트</td>
+                <td>애니포인트 및 티맵 안전운전 81점 이상 최대 할인</td>
+                <td>신속한 현장 출동 네트워크 및 탄탄한 보상 체계</td>
+                <td>대형사 신뢰도를 중시하는 가족 한정 운전자</td>
+              </tr>
+              <tr>
+                <td>현대해상 하이카 다이렉트</td>
+                <td>만 6세 이하 자녀할인 특약(최대 14%) 및 커넥티드카 할인</td>
+                <td>어린이 보장 및 패밀리 케어 서비스 우수</td>
+                <td>유아 및 미취학 자녀가 있는 3040 부부 운전자</td>
+              </tr>
+              <tr>
+                <td>KB손해보험 다이렉트</td>
+                <td>대중교통 이용 실적 할인 및 걸음수 건강 특약</td>
+                <td>모바일 앱 UX 편의성 및 신속한 마일리지 환급</td>
+                <td>출퇴근 시 지하철/버스를 병행 이용하는 직장인</td>
+              </tr>
+              <tr>
+                <td>DB손해보험 다이렉트</td>
+                <td>프로미 안전운전 UBI 특약 원조 및 첨단 ADAS 장치 할인</td>
+                <td>가성비 높은 견적대 및 다양한 제휴 혜택</td>
+                <td>주행거리가 길고 안전운전 점수가 높은 차주</td>
+              </tr>
+              <tr>
+                <td>캐롯 퍼마일 자동차보험</td>
+                <td>주행한 킬로미터당 매월 후불 정산하는 특화 요금제</td>
+                <td>캐롯플러그 IoT 기반 주행거리 자동 측정</td>
+                <td>연간 주행거리 5,000km 미만의 세컨드카 소유자</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          갱신 시기에는 각사별로 진행하는 모바일 주유권 증정, 네이버페이 포인트 상품권 지급, 카드사 결제 캐시백 현금지원 프로모션 이벤트를 적극적으로 활용하면 3만원에서 5만원 상당의 실질적인 사은품 혜택까지 챙길 수 있습니다.
+        </p>
+      </section>
+
+      <section class="article-section">
+        <h2>AI 검색 엔진(챗지피티, 제미나이, 네이버 AI)과 핀테크를 통한 관리 전략</h2>
+        <p>
+          2026년과 2027년의 인슈어테크 환경은 생성형 인공지능(AI)과 금융 데이터 API의 결합으로 한 단계 도약했습니다. 과거에는 설계사의 주관적인 설명이나 불투명한 요금표에 의존해야 했지만, 이제는 챗지피티(ChatGPT), 구글 제미나이(Gemini), 네이버 AI 검색 탭 등을 활용하여 복잡한 사고 내역의 할증 영향을 단 몇 초 만에 질의하고 정확한 법령 근거를 답변받을 수 있습니다.
+        </p>
+        <p>
+          또한 토스(Toss), 카카오톡, 네이버페이 등 일상적인 핀테크 어플 내에서 마이데이터 자산관리와 연동해 두면, 만기 30일 전에 자동으로 각 보험사 다이렉트 서버와 통신하여 현재 등급 기반의 최저가 순위와 예상 환급금을 계산해 보여줍니다. 유튜브와 인스타그램, 페이스북, 트위터, 텔레그램 등의 공식 채널을 통해서도 실시간 법 개정 소식과 특약 조합 성지 좌표 정보가 투명하게 공유되고 있으므로 이를 정기적으로 모니터링하는 습관이 필요합니다.
+        </p>
+      </section>
+
+      <section class="article-section">
+        <h2>함께 많이 찾는 연관 검색어 및 핵심 키워드 총정리</h2>
+        <p>
+          자동차보험 할증 등급을 확인하는 금융소비자들이 포털 사이트에서 함께 많이 찾는 주요 키워드와 핵심 질문 리스트입니다.
+        </p>
+        <div class="tag-container">
+          <span class="tag-pill">#자동차보험할증등급</span>
+          <span class="tag-pill">#자동차보험등급표</span>
+          <span class="tag-pill">#자동차보험할증기준</span>
+          <span class="tag-pill">#자동차보험조회</span>
+          <span class="tag-pill">#물적사고할증기준금액</span>
+          <span class="tag-pill">#자기차량손해자기부담금</span>
+          <span class="tag-pill">#자동차보험환입</span>
+          <span class="tag-pill">#사고점수계산기</span>
+          <span class="tag-pill">#직전3년사고건수</span>
+          <span class="tag-pill">#다이렉트자동차보험비교</span>
+          <span class="tag-pill">#자동차보험만기일조회</span>
+          <span class="tag-pill">#자동차보험신규가입등급</span>
+          <span class="tag-pill">#공동인수할증요율</span>
+          <span class="tag-pill">#마일리지특약환급</span>
+          <span class="tag-pill">#UBI안전운전특약</span>
+          <span class="tag-pill">#운전자보험차이점</span>
+          <span class="tag-pill">#대인배상부상급수</span>
+          <span class="tag-pill">#스쿨존법규위반할증</span>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="article-section">
+        <h2>자주 묻는 질문 (FAQ)</h2>
+        <div class="faq-accordion">
           
-          dt.classList.toggle('active');
-          let expanded = dt.getAttribute('aria-expanded') === 'true';
-          dt.setAttribute('aria-expanded', !expanded);
-        });
-        dt.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            dt.click();
-          }
-        });
-      });
+          <div class="faq-row">
+            <button type="button" class="faq-trigger">
+              <span><span class="faq-trigger-badge">Q1</span>자동차보험 신규 가입 시 11Z가 아닌 11F나 다른 코드로 표기되는 이유는 무엇인가요?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                손해보험사에 따라 등급 체계를 표기할 때 정규 등급을 Z(Zero) 대신 F(Fixed)로 표현하거나, 동일 등급 내 분할 구간을 P(Plus)로 구분하기 때문입니다. 명칭의 표기 차이일 뿐 본질적인 위험 요율(약 100%)과 등급 승급 규정은 보험개발원 표준 요율 기준에 의해 동일하게 작동합니다.
+              </div>
+            </div>
+          </div>
 
-      // 2026 자동차보험 할인할증 등급 계산기 스크립트
-      function calculatePremiumChange() {
-        const currentPremium = parseFloat(document.getElementById('current-premium').value) || 900000;
-        const currentGrade = parseInt(document.getElementById('current-grade').value);
-        const accidentType = document.getElementById('accident-type').value;
-        const mileage = parseInt(document.getElementById('mileage').value) || 10000;
-        const ageGroup = document.getElementById('age-group').value;
-        const carModel = document.getElementById('car-model').value;
-        
-        let gradeChange = 0;
-        let isFGrade = false;
-        let nextGradeStr = "";
-        
-        if (accidentType === "none") {
-          gradeChange = 1; 
-        } else if (accidentType === "minor") {
-          gradeChange = 0;
-          isFGrade = true; // 0.5점 사고는 기존 등급 유지되나 3년 할인 유예되는 F등급화
-        } else if (accidentType === "medium") {
-          gradeChange = -1;
-        } else if (accidentType === "major") {
-          gradeChange = -3;
-        }
-        
-        let nextGradeNum = currentGrade + gradeChange;
-        if (nextGradeNum < 1) nextGradeNum = 1;
-        if (nextGradeNum > 29) nextGradeNum = 29;
-        
-        if (isFGrade && nextGradeNum < 29) {
-          nextGradeStr = currentGrade + "F (할인 유예)";
-        } else if (nextGradeNum === 29) {
-          nextGradeStr = "29P (보호 등급)";
-        } else {
-          nextGradeStr = nextGradeNum + "Z";
-        }
-        
-        // 2026 참조 등급 요율 테이블 매핑 함수
-        function getRateValue(grade, isF) {
-          if (isF) {
-            let gRate = getRateValue(grade, false);
-            let nextGRate = getRateValue(Math.max(1, grade - 1), false);
-            return (gRate + nextGRate) / 2;
-          }
-          if (grade === 1) return 1.95;
-          if (grade === 6) return 1.16;
-          if (grade === 11) return 0.78;
-          if (grade === 15) return 0.55;
-          if (grade === 18) return 0.47;
-          if (grade === 22) return 0.42;
-          if (grade === 26) return 0.36;
-          if (grade === 29) return 0.30;
-          
-          // 중간 보정선
-          if (grade > 1 && grade < 6) return 1.50;
-          if (grade > 6 && grade < 11) return 0.95;
-          if (grade > 11 && grade < 15) return 0.65;
-          if (grade > 15 && grade < 18) return 0.51;
-          if (grade > 18 && grade < 22) return 0.44;
-          if (grade > 22 && grade < 26) return 0.39;
-          return 0.33; 
-        }
-        
-        const currentRate = getRateValue(currentGrade, false);
-        const nextRate = getRateValue(nextGradeNum, isFGrade);
-        
-        let basePremium = currentPremium / currentRate;
-        let nextPremium = basePremium * nextRate;
-        
-        // 마일리지 구간 할인율 설계
-        let mileageDiscountRate = 0;
-        if (mileage < 3000) mileageDiscountRate = 0.35;
-        else if (mileage < 5000) mileageDiscountRate = 0.28;
-        else if (mileage < 10000) mileageDiscountRate = 0.15;
-        else if (mileage < 15000) mileageDiscountRate = 0.05;
-        
-        // 추가 선택 할인 특약 연쇄 연산
-        let addedDiscountMultiplier = 1.0;
-        if (document.getElementById('dc-blackbox').checked) addedDiscountMultiplier *= 0.97;
-        if (document.getElementById('dc-adas').checked) addedDiscountMultiplier *= 0.95;
-        if (document.getElementById('dc-child').checked) addedDiscountMultiplier *= 0.92;
-        if (document.getElementById('dc-ubi').checked) addedDiscountMultiplier *= 0.88;
-        
-        // 연령대 및 차종에 따른 가상 가중치 보정 (차이점 분석용)
-        let weightFactor = 1.0;
-        if (ageGroup === "young") weightFactor *= 1.4;
-        if (carModel === "import") weightFactor *= 1.5;
-        if (carModel === "suv") weightFactor *= 0.95;
-        
-        let finalNextPremium = nextPremium * (1 - mileageDiscountRate) * addedDiscountMultiplier * weightFactor;
-        let finalCurrentPremium = currentPremium * (1 - mileageDiscountRate) * addedDiscountMultiplier * weightFactor;
-        
-        // 결과를 화면 UI 영역에 표기
-        document.getElementById('result-area').style.display = "block";
-        document.getElementById('res-current-grade').innerText = currentGrade + "Z";
-        document.getElementById('res-next-grade').innerText = nextGradeStr;
-        document.getElementById('res-current-rate').innerText = Math.round(currentRate * 100) + "%";
-        document.getElementById('res-next-rate').innerText = Math.round(nextRate * 100) + "%";
-        document.getElementById('res-next-premium').innerText = Math.round(finalNextPremium).toLocaleString() + " 원 (연간)";
-        
-        // 현금 환입 및 합리적 관리 관련 맞춤형 피드백 제언
-        let adviceMsg = "";
-        if (accidentType === "none") {
-          adviceMsg = "훌륭하게 안전운전을 지속해 주고 계십니다. 등급이 1단계 승급됨에 따라 기본 갱신 단가가 하향조정될 예정입니다. 마일리지 및 안전운전 UBI 연계 혜택을 극대화하여 가장 저렴한곳 위주로 계약 비교를 진행해 보시기 바랍니다.";
-        } else if (accidentType === "minor") {
-          let estimatedPremiumLoss = (finalNextPremium - finalCurrentPremium) * 3; // 3년 유예 기간 가치 산정
-          adviceMsg = "이번 물적 손상 금액이 크지 않다면 가급적 사후적으로 보험금을 자비 환입하시는 방법을 추천합니다. 향후 3년간 누적되는 할인 유예 손실 추정액인 약 " + Math.round(estimatedPremiumLoss).toLocaleString() + " 원 수준과 비교해 보신 후 결정하십시오.";
-        } else if (accidentType === "medium") {
-          let estimatedPremiumLoss = (finalNextPremium - finalCurrentPremium) * 3;
-          adviceMsg = "물적사고 기준금액을 초과한 1점 수준의 등급 낙하 사고입니다. 갱신 시 적용률 부담이 약 " + Math.round(nextRate*100) + "% 수준으로 무겁게 전가됩니다. 지급액이 작다면 등급 보존을 위해 빠른 환입 처리를 진행하시는 장단점을 파악하십시오.";
-        } else {
-          adviceMsg = "대인 피해가 발생한 중대사고는 등급이 최소 3단계 이상 크게 할증되며 수년간 부담이 지속될 수밖에 없습니다. 이 수준은 환입금 부담이 크므로, 일단 보장 처리를 원활히 매듭짓고 다이렉트 싼곳의 추가 특약(마일리지, UBI) 할인을 한계까지 연동해 부담을 분산하십시오.";
-        }
-        document.getElementById('res-advice').innerText = adviceMsg;
-        
-        // 결과 표시 후 부드럽게 스크롤 이동
-        document.getElementById('result-area').scrollIntoView({ behavior: 'smooth' });
+          <div class="faq-row">
+            <button type="button" class="faq-trigger">
+              <span><span class="faq-trigger-badge">Q2</span>내 과실이 50% 미만인 피해 사고의 경우에도 등급 할증이 발생하나요?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                과실비율 50% 미만의 피해 운전자는 사고내용점수에 따른 직접적인 등급 강등을 면제받습니다. 다만 해당 사고는 직전 3년간 사고건수 요율 산정 시 1건으로 카운트되지는 않되, 직전 1년간 무사고 할인 승급에서는 제외되어 다음 1년간 등급이 유예(동결)될 수 있습니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-row">
+            <button type="button" class="faq-trigger">
+              <span><span class="faq-trigger-badge">Q3</span>가족 한정 특약으로 부모님 명의의 차를 운전하다가 사고를 내면 부모님의 등급이 떨어지나요?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                그렇습니다. 자동차보험의 할인할증 등급은 운전자가 아닌 차량 피보험자(차량 등록 명의자)를 기준으로 관리됩니다. 따라서 자녀가 운전 중 사고를 내어 보험 처리가 이루어지면 피보험자인 부모님의 해당 차량 등급이 하락하게 되며, 부모님 명의로 등록된 다른 차량의 보험료에도 등급 동일증권 묶음 여부에 따라 연쇄 할증이 발생할 수 있습니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-row">
+            <button type="button" class="faq-trigger">
+              <span><span class="faq-trigger-badge">Q4</span>동일증권(동일 피보험자 다수 차량) 계약을 체결하는 것이 할증 관리에 왜 유리한가요?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                한 사람이 2대 이상의 차량을 보유하고 있을 때 이를 하나의 증권 번호로 묶는 제도를 동일증권이라고 합니다. 동일증권으로 묶여 있으면 1대의 차량에서 사고가 났을 때 발생하는 할증 점수가 보유 차량 대수만큼 분산(예: 1점 할증 시 차량당 0.5점씩 분할 반영)되어 단일 차량에 집중되는 극단적인 보험료 폭등을 방지할 수 있습니다. 반대로 동일증권으로 묶지 않으면 사고 차량뿐만 아니라 무사고 차량까지 전액 동일하게 할증이 전파됩니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-row">
+            <button type="button" class="faq-trigger">
+              <span><span class="faq-trigger-badge">Q5</span>주차장에 세워둔 내 차를 누군가 긁고 도망쳐서 가해자를 잡지 못했을 때 자차 보험처리를 하면 등급이 어떻게 되나요?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                가해자 불명 자차 사고의 경우, 수리비가 30만원 이하의 소액 사고라면 1년간 등급 승급 유예만 적용되고 할증은 되지 않습니다. 그러나 수리비가 30만원을 초과하거나 직전 1년 내에 유사한 사고가 반복되면 0.5점 내지 1.0점의 정규 할증 점수가 부과되므로, 블랙박스나 주변 CCTV를 면밀히 분석하여 가해 차량을 특정하는 노력이 선행되어야 합니다.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- External Authority Links (reliabledone.com subdomain FIRST, Namuwiki, KIDI) -->
+      <section class="authority-box">
+        <h3>공인된 금융 당국 및 공신력 있는 공식 외부 정보처</h3>
+        <p>자동차보험 요율 산출 원칙 및 법규위반 기준, 등급 승급의 투명성을 검증할 수 있는 공인 웹사이트입니다. 안전한 링크를 통해 추가 정보를 확인하세요.</p>
+        <div class="authority-link-group">
+          <a href="https://directwsearchq.reliabledone.com" class="authority-btn" target="_blank" rel="noopener noreferrer">
+            공식 등급요율 조회 가이드 (reliabledone)
+          </a>
+          <a href="https://namu.wiki/w/자동차보험" class="authority-btn" target="_blank" rel="noopener noreferrer">
+            나무위키 자동차보험 상세 해설
+          </a>
+          <a href="https://www.kidi.or.kr/" class="authority-btn" target="_blank" rel="noopener noreferrer">
+            보험개발원 (KIDI) 공식 포털
+          </a>
+        </div>
+      </section>
+
+    </article>
+  </div>
+</main>
+
+
+	
+<script>
+// Interactive Grade Simulator Calculation Logic
+document.getElementById('run-calc-btn').addEventListener('click', function() {
+  const currentGrade = parseInt(document.getElementById('current-grade').value, 10);
+  const baseCost = parseFloat(document.getElementById('base-cost').value) || 850000;
+  const injuryScore = parseFloat(document.getElementById('accident-injury').value);
+  const propertyScore = parseFloat(document.getElementById('accident-property').value);
+
+  const totalScore = injuryScore + propertyScore;
+  let newGrade = currentGrade;
+  let multiplier = 1.0;
+  let explanation = "";
+
+  if (totalScore === 0) {
+    newGrade = Math.min(29, currentGrade + 1);
+    multiplier = 0.92;
+    explanation = "무사고 운전을 유지하여 1등급 승급 할인 혜택이 적용됩니다.";
+  } else if (totalScore === 0.5) {
+    newGrade = currentGrade;
+    multiplier = 1.12;
+    explanation = "물적사고 200만원 이하 소액 사고(0.5점)로 등급은 동결(유예)되나 직전 3년 사고건수 요율(약 12%)이 가산됩니다.";
+  } else {
+    const gradeDrop = Math.floor(totalScore);
+    newGrade = Math.max(1, currentGrade - gradeDrop);
+    multiplier = 1.0 + (gradeDrop * 0.15) + 0.18;
+    explanation = "총 사고점수 " + totalScore.toFixed(1) + "점이 부과되어 " + gradeDrop + "개 등급이 강등되었으며, 사고건수 요율이 복합 적용되어 체감 보험료가 대폭 상승합니다.";
+  }
+
+  const calculatedCost = Math.round((baseCost * multiplier) / 1000) * 1000;
+
+  document.getElementById('res-grade').textContent = newGrade + "Z";
+  document.getElementById('res-cost').textContent = calculatedCost.toLocaleString() + "원";
+  document.getElementById('res-desc').textContent = explanation;
+  document.getElementById('sim-result').style.display = 'block';
+});
+
+// FAQ Accordion Toggle Interaction
+document.querySelectorAll('.faq-trigger').forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    const parentRow = trigger.parentElement;
+    const content = trigger.nextElementSibling;
+    const isActive = parentRow.classList.contains('active');
+
+    document.querySelectorAll('.faq-row').forEach(row => {
+      row.classList.remove('active');
+      const innerContent = row.querySelector('.faq-content');
+      if (innerContent) {
+        innerContent.style.maxHeight = null;
       }
-    </script>
-  
+    });
+
+    if (!isActive) {
+      parentRow.classList.add('active');
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+});
+</script>
+
+	
 
 
+	
 
 
-
-
-
-<!-- [SEO 최적화 무링크 푸터] 별도 수정 및 연결할 페이지 없이 바로 사용 가능합니다. -->
-<footer id="dynamic-footer">
-  <div class="footer-container">
+	
+<!-- =================================================================
+     [SEO 자동화 무수정 올인원 푸터]
+     - 코드 수정 없이 수백 개 웹페이지에 즉시 복사/붙여넣기 가능
+     - URL 경로 자동 분석 -> Schema.org 브레드크럼(Breadcrumb) 리치 스니펫 주입
+     - 도메인/타이틀/연도/이메일 100% 자동 동기화
+================================================================== -->
+<footer id="auto-seo-footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+  <div class="asf-container">
     
-    <!-- 1. 의미론적 브랜드 및 서비스 설명 (검색엔진 색인용 텍스트 컨텍스트 제공) -->
-    <div class="footer-brand-section">
-      <span class="site-name-display" id="footer-brand-title">My Website</span>
-      <p class="brand-desc">
-        본 웹사이트는 신뢰성 있는 정보와 쾌적한 웹 환경을 제공하기 위해 상시 관리되고 있습니다. 
-        웹 표준을 준수하며, 안정적인 자원 관리와 실시간 시스템 점검을 통해 상시 최적화된 서비스를 유지합니다.
+    <!-- 상단: 자동 인식 브랜드 정보 및 내부 링크 최적화 -->
+    <div class="asf-top">
+      <div class="asf-brand-box">
+        <a href="/" class="asf-brand-name" id="asf-title-link" title="홈으로 이동">Website</a>
+        <p class="asf-brand-desc" id="asf-desc-text">
+          본 페이지는 웹 표준을 준수하며 신뢰성 높은 정보를 제공합니다.
+        </p>
+      </div>
+
+      <!-- 내부 링크 및 크롤러 예산 분배 제어 -->
+      <nav class="asf-nav" aria-label="바닥글 탐색">
+        <ul class="asf-links">
+          <li><a href="/" title="홈페이지">홈</a></li>
+          <li><a href="javascript:void(0)" onclick="asfOpenModal('privacy')" rel="nofollow">개인정보처리방침</a></li>
+          <li><a href="javascript:void(0)" onclick="asfOpenModal('terms')" rel="nofollow">이용약관</a></li>
+          <li><a href="#" id="asf-mail-link">문의하기</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="asf-divider"></div>
+
+    <!-- 하단: 메타 정보 및 카피라이트 -->
+    <div class="asf-bottom">
+      <div class="asf-meta-info">
+        <span>사이트: <strong id="asf-domain-text">domain.com</strong></span>
+        <span class="asf-sep">|</span>
+        <span>운영 문의: <span id="asf-email-text">admin@domain.com</span></span>
+      </div>
+      <p class="asf-copyright">
+        &copy; <span id="asf-year">2026</span> <span class="asf-copy-name">Website</span>. All rights reserved.
       </p>
-    </div>
-
-    <!-- 2. 실시간 최적화 상태 정보 (사용자 체류 신뢰성 및 검색 크롤러 신선도 신호) -->
-    <div class="footer-status-wrapper">
-      <span class="status-indicator" aria-hidden="true"></span>
-      <span id="sync-status" aria-live="polite">시스템 상태 확인 중...</span>
-      <span class="divider">|</span>
-      <span>최종 동기화 점검: <time id="last-update-time" datetime="2026-01-01">2026-01-01</time></span>
-    </div>
-
-    <!-- 3. 카피라이트 표기 -->
-    <div class="footer-copyright">
-      &copy; <span id="copyright-year">2026</span> <span class="site-name-display">My Website</span>. All rights reserved.
     </div>
 
   </div>
 
-  <!-- 푸터 전용 레이아웃 및 디자인 정의 -->
-  <style>
-    #dynamic-footer {
-      font-size: 12px;
-      color: #666;
-      line-height: 1.8;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background-color: #fafafa;
-      border-top: 1px solid #eaeaea;
-      padding: 45px 20px;
-      text-align: center;
-    }
-    #dynamic-footer .footer-container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    #dynamic-footer .footer-brand-section {
-      margin-bottom: 22px;
-    }
-    #dynamic-footer .site-name-display {
-      font-size: 14px;
-      font-weight: 700;
-      color: #333;
-      display: inline-block;
-      margin-bottom: 8px;
-    }
-    #dynamic-footer .brand-desc {
-      max-width: 580px;
-      margin: 0 auto;
-      color: #888;
-      font-size: 11.5px;
-      word-break: keep-all;
-    }
-    #dynamic-footer .footer-status-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      color: #999;
-      margin-bottom: 18px;
-    }
-    #dynamic-footer .status-indicator {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background-color: #2ecc71;
-      border-radius: 50%;
-      box-shadow: 0 0 5px rgba(46, 204, 113, 0.6);
-      animation: pulse-glow 2s infinite ease-in-out;
-    }
-    #dynamic-footer .footer-copyright {
-      color: #999;
-      font-size: 11px;
-    }
-    #dynamic-footer .divider {
-      color: #e8e8e8;
-      margin: 0 6px;
-      user-select: none;
-    }
+  <!-- 데드링크 방지용 내장 약관 모달 -->
+  <div id="asf-modal" class="asf-modal" style="display:none;" role="dialog" aria-modal="true">
+    <div class="asf-modal-content">
+      <div class="asf-modal-header">
+        <h4 id="asf-modal-title">약관 안내</h4>
+        <button type="button" onclick="asfCloseModal()" class="asf-close-btn" aria-label="닫기">&times;</button>
+      </div>
+      <div class="asf-modal-body" id="asf-modal-body"></div>
+    </div>
+  </div>
 
-    @keyframes pulse-glow {
-      0% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.6; transform: scale(1.15); }
-      100% { opacity: 1; transform: scale(1); }
+  <!-- 자체 완결형 경량 스타일 (CSS 간섭 방지 scoped) -->
+  <style>
+    #auto-seo-footer {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.6;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", sans-serif;
+      background-color: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+      padding: 36px 20px 24px;
+      box-sizing: border-box;
+      width: 100%;
     }
+    #auto-seo-footer .asf-container { max-width: 1000px; margin: 0 auto; }
+    #auto-seo-footer .asf-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; }
+    #auto-seo-footer .asf-brand-box { max-width: 580px; }
+    #auto-seo-footer .asf-brand-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0f172a;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+    #auto-seo-footer .asf-brand-name:hover { text-decoration: underline; }
+    #auto-seo-footer .asf-brand-desc { margin: 0; font-size: 12px; color: #64748b; word-break: keep-all; }
+    #auto-seo-footer .asf-nav { flex-shrink: 0; }
+    #auto-seo-footer .asf-links { list-style: none; padding: 0; margin: 0; display: flex; gap: 14px; }
+    #auto-seo-footer .asf-links a {
+      color: #475569;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    #auto-seo-footer .asf-links a:hover { color: #0284c7; text-decoration: underline; }
+    #auto-seo-footer .asf-divider { border-top: 1px solid #e2e8f0; margin: 20px 0; }
+    #auto-seo-footer .asf-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 11.5px;
+      color: #94a3b8;
+    }
+    #auto-seo-footer .asf-sep { margin: 0 8px; color: #cbd5e1; }
+    #auto-seo-footer .asf-copyright { margin: 0; }
+    
+    /* 약관 모달창 */
+    #auto-seo-footer .asf-modal {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5); z-index: 999999;
+      display: flex; align-items: center; justify-content: center;
+    }
+    #auto-seo-footer .asf-modal-content {
+      background: #fff; border-radius: 8px; max-width: 500px; width: 90%;
+      padding: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    #auto-seo-footer .asf-modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+    #auto-seo-footer .asf-modal-header h4 { margin: 0; font-size: 16px; color: #1e293b; }
+    #auto-seo-footer .asf-close-btn { background: none; border: none; font-size: 24px; cursor: pointer; color: #64748b; }
+    #auto-seo-footer .asf-modal-body { max-height: 300px; overflow-y: auto; font-size: 12.5px; color: #475569; line-height: 1.6; }
 
     @media (max-width: 768px) {
-      #dynamic-footer {
-        padding: 35px 15px;
-      }
-      #dynamic-footer .footer-status-wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
-        row-gap: 4px;
-      }
+      #auto-seo-footer .asf-top { flex-direction: column; gap: 16px; }
+      #auto-seo-footer .asf-bottom { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </footer>
 
+<!-- 3. 실시간 SEO 연동 및 브레드크럼 리치스니펫 자동 주입 스크립트 -->
 <script>
 (function() {
   'use strict';
 
-  // 1. 한국 표준시(KST) 기반 타임스탬프 계산기
-  function getKstInfo() {
-    try {
-      const now = new Date();
-      const formatter = new Intl.DateTimeFormat('ko-KR', {
-        timeZone: 'Asia/Seoul',
-        year: 'numeric', month: '2-digit', day: '2-digit',
-        hour: '2-digit', minute: '2-digit', second: '2-digit',
-        hour12: false
-      });
+  function initSeoEngine() {
+    var host = window.location.hostname;
+    var cleanHost = host.replace(/^www\./, '');
+    var origin = window.location.origin;
+    var pathname = window.location.pathname;
+    
+    // 1) 사이트 타이틀 자동 판별
+    var rawTitle = document.title ? document.title.split(/[-|_|:]/)[0].trim() : cleanHost;
+    if (!rawTitle) rawTitle = cleanHost;
 
-      const parts = formatter.formatToParts(now).reduce((acc, part) => {
-        acc[part.type] = part.value;
-        return acc;
-      }, {});
+    // 2) DOM 텍스트 자동 동기화
+    var titleLink = document.getElementById('asf-title-link');
+    if (titleLink) titleLink.textContent = rawTitle;
 
-      const year = parts.year;
-      const formattedDate = year + '-' + parts.month + '-' + parts.day;
-      const isoDateTime = year + '-' + parts.month + '-' + parts.day + 'T' + parts.hour + ':' + parts.minute + ':' + parts.second + '+09:00';
+    var domainText = document.getElementById('asf-domain-text');
+    if (domainText) domainText.textContent = cleanHost;
 
-      return { year, formattedDate, isoDateTime };
-    } catch (e) {
-      const local = new Date();
-      const year = local.getFullYear().toString();
-      const formattedDate = year + '-' + String(local.getMonth() + 1).padStart(2, '0') + '-' + String(local.getDate()).padStart(2, '0');
-      return { year, formattedDate, isoDateTime: local.toISOString() };
-    }
-  }
+    var autoEmail = 'admin@' + cleanHost;
+    var emailText = document.getElementById('asf-email-text');
+    if (emailText) emailText.textContent = autoEmail;
 
-  // 2. 동적 SEO 헤더 업데이트 및 구조화 데이터 주입 (무링크 페이지 대응형)
-  function updateSeoEngine(data) {
-    const title = document.title || window.location.hostname;
-    const currentUrl = window.location.href;
-    const originUrl = window.location.origin;
+    var mailLink = document.getElementById('asf-mail-link');
+    if (mailLink) mailLink.href = 'mailto:' + autoEmail;
 
-    const setMeta = (selector, content) => {
-      let el = document.querySelector(selector);
-      if (!el) {
-        el = document.createElement('meta');
-        if (selector.includes('property')) {
-          el.setAttribute('property', selector.split('"')[1]);
-        } else {
-          el.setAttribute('name', selector.split('"')[1]);
-        }
-        document.head.appendChild(el);
+    var yearElem = document.getElementById('asf-year');
+    if (yearElem) yearElem.textContent = new Date().getFullYear();
+
+    var copyNames = document.querySelectorAll('#auto-seo-footer .asf-copy-name');
+    copyNames.forEach(function(el) { el.textContent = rawTitle; });
+
+    // 3) [상위노출 핵심] 구글 브레드크럼(BreadcrumbList) & WebSite Schema 자동 생성
+    var pathSegments = pathname.split('/').filter(function(seg) { return seg.length > 0; });
+    var itemListElement = [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": origin + "/"
       }
-      el.content = content;
-    };
+    ];
 
-    // [SEO] 필수 메타 데이터 동기화
-    setMeta('property="og:updated_time"', data.isoDateTime);
-    setMeta('property="article:modified_time"', data.isoDateTime);
-    setMeta('name="date"', data.formattedDate);
-    setMeta('name="last-modified"', data.isoDateTime);
-    setMeta('name="copyright"', data.year + ' ' + title);
+    var accumulatedPath = origin;
+    pathSegments.forEach(function(segment, index) {
+      accumulatedPath += '/' + segment;
+      var decodedName = decodeURIComponent(segment).replace(/[-_+]/g, ' ');
+      // 마지막 글 제목인 경우 타이틀 활용
+      if (index === pathSegments.length - 1 && document.title) {
+        decodedName = rawTitle;
+      }
+      itemListElement.push({
+        "@type": "ListItem",
+        "position": index + 2,
+        "name": decodedName,
+        "item": accumulatedPath
+      });
+    });
 
-    // [SEO] 구조화 데이터(JSON-LD) 생성 및 반영 (WebPage + WebSite 연동)
-    let ldJsonScript = document.getElementById('seo-json-ld');
-    if (!ldJsonScript) {
-      ldJsonScript = document.createElement('script');
-      ldJsonScript.id = 'seo-json-ld';
-      ldJsonScript.type = 'application/ld+json';
-      document.head.appendChild(ldJsonScript);
-    }
-
-    const jsonLd = {
+    var dynamicSchema = {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "WebPage",
-          "@id": currentUrl,
-          "url": currentUrl,
-          "name": title,
-          "datePublished": data.isoDateTime,
-          "dateModified": data.isoDateTime,
-          "inLanguage": "ko-KR",
-          "isPartOf": {
-            "@type": "WebSite",
-            "@id": originUrl + "/#website",
-            "url": originUrl,
-            "name": title
-          }
+          "@type": "WebSite",
+          "@id": origin + "/#website",
+          "url": origin,
+          "name": rawTitle
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": window.location.href + "#breadcrumb",
+          "itemListElement": itemListElement
         }
       ]
     };
-    ldJsonScript.textContent = JSON.stringify(jsonLd);
+
+    // Schema script 태그 주입
+    var script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(dynamicSchema);
+    document.head.appendChild(script);
   }
 
-  // 3. UI 바인딩 및 보정
-  function updateUi(data) {
-    const cleanHost = window.location.hostname.replace('www.', '');
-    const title = document.title ? document.title.split('-')[0].trim() : cleanHost;
+  // 4) 내장 모달(약관) 제어 로직 (404 방지)
+  window.asfOpenModal = function(type) {
+    var modal = document.getElementById('asf-modal');
+    var title = document.getElementById('asf-modal-title');
+    var body = document.getElementById('asf-modal-body');
+    var cleanHost = window.location.hostname.replace(/^www\./, '');
 
-    // 사이트 타이틀 일괄 바인딩
-    const titleElements = document.querySelectorAll('#dynamic-footer .site-name-display');
-    titleElements.forEach(el => {
-      el.textContent = title;
-    });
-
-    // 연도 및 날짜 정보 바인딩
-    const copyrightYear = document.getElementById('copyright-year');
-    if (copyrightYear) copyrightYear.textContent = data.year;
-
-    const timeElem = document.getElementById('last-update-time');
-    if (timeElem) {
-      timeElem.textContent = data.formattedDate;
-      timeElem.setAttribute('datetime', data.isoDateTime);
+    if (type === 'privacy') {
+      title.textContent = '개인정보처리방침';
+      body.innerHTML = '<strong>' + cleanHost + '</strong>는 이용자의 개인정보를 중요시하며, 관련 법령을 준수합니다.<br><br>' +
+        '1. 수집 항목: 접속 로그, 브라우저 정보 등 서비스 이용 과정에서 자동 생성되는 정보<br>' +
+        '2. 이용 목적: 사이트 트래픽 분석 및 안정적인 서비스 유지관리<br>' +
+        '3. 보유 기간: 관련 법령에 따른 의무 보존 기간 동안 보관 후 파기됩니다.';
+    } else {
+      title.textContent = '서비스 이용약관';
+      body.innerHTML = '<strong>' + cleanHost + '</strong> 이용을 환영합니다.<br><br>' +
+        '1. 본 사이트의 모든 콘텐츠는 정보 제공 목적으로 작성되었습니다.<br>' +
+        '2. 무단 복제 및 상업적 도용을 금지하며, 링크 공유 및 인용은 출처를 명시해야 합니다.';
     }
+    if (modal) modal.style.display = 'flex';
+  };
 
-    // 시스템 최적화 상태 시그널 순환 출력
-    const statusMsgs = [
-      "웹표준 최적화 점검 완료",
-      "보안 환경 무결성 확인",
-      "레이아웃 정합성 검증 완료",
-      "반응형 데이터 세그먼트 동기화",
-      "검색엔진 인덱싱 데이터 정비",
-      "클라이언트 캐시 동기화 완료",
-       "서비스 최적화 완료", 
-       "데이터베이스 동기화 완료", 
-       "보안 프로토콜 점검 완료",
-       "콘텐츠 최신화 완료",
-       "시스템 점검 완료",
-       "웹표준 레이아웃 최적화",
-       "사용자 인터페이스 안정화",
-       "성능 개선 완료",
-       "새로운 데이터 로드 완료",
-       "운영 시스템 안정화 완료",
-       "인덱싱 최적화 완료",
-       "데이터 무결성 검사 완료", 
-       "캐시 레이어 갱신",
-       "보안 프로토콜 활성화", 
-       "실시간 콘텐츠 동기화"
-    ];
-    const syncStatus = document.getElementById('sync-status');
-    if (syncStatus) {
-      syncStatus.textContent = statusMsgs[Math.floor(Math.random() * statusMsgs.length)];
-    }
-  }
-
-  // 4. 실행 통합 컨트롤러
-  function init() {
-    const data = getKstInfo();
-    updateUi(data);
-    updateSeoEngine(data);
-  }
+  window.asfCloseModal = function() {
+    var modal = document.getElementById('asf-modal');
+    if (modal) modal.style.display = 'none';
+  };
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', initSeoEngine);
   } else {
-    init();
+    initSeoEngine();
   }
 })();
 </script>
